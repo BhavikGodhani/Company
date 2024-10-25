@@ -1,0 +1,13 @@
+.container{
+    width: 250px;
+    height:300px;
+    padding-left: 20px;
+    margin-top: 60px;
+    margin-left: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: aqua;
+}
+#password {
+    margin-bottom: 10px;
+}

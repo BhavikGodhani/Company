@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+     <style>
+        .container{
+            margin-top: 20px;
+            margin-left: 500px;
+        }
+        #box{
+            margin-left: 500px;
+            border: 1px solid black;
+            margin-top: 10px;
+            background-color:aquamarine
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <label>Enter the size:</label>
+        <input type="text" id="size" placeholder="by default 10">
+        <label>Enter the speed:</label>
+        <input type="text" id="speed" placeholder="by default 10">
+
+        <button id="btn" onclick="start()">Start</button>
+        <span id="score"></span>
+    </div>
+    <canvas id="box" width="500" height="500"></canvas>
+    <script>
+
+   const score = document.getElementById('score');
+   const  canvas = document.getElementById("box");
+   const ctx = canvas.getContext("2d");
+
+let snakeSize ,snakeSpeed, x , y;
+const box = 600; 
+let keyCode = 39; 
+let snake = [];
+let food = {} 
+
+let interval;
+
+const makeFood =() => {
+    food.x = Math.floor((Math.random()*(box- snakeSize*6)+snakeSize*3)/snakeSize)*snakeSize;
+    food.y = Math.floor((Math.random()*(box- snakeSize*6)+snakeSize*3)/snakeSize)*snakeSize;
+}
+
+const updateLocation = () => {
+    if(keyCode === 38) y-=snakeSize;
+    else if(keyCode === 39) x+=snakeSize;
+    else if(keyCode === 40) y+=snakeSize;
+    else if(keyCode === 37) x-=snakeSize;
+}
+
+const clearLastLocation = (location) => {
+    if(snake[0]) {
+        location = snake.pop()
+    }
+    ctx.clearRect(location.x || x , location.y|| y , snakeSize, snakeSize);
+}
+
+const updateFood = ()=> {
+    if(food.x === x && food.y === y) {
+        makeFood();
+        snake.push({x:food.x , y:food.y});
+    }
+    ctx.fillRect(food.x, food.y, snakeSize, snakeSize);
+
+}
+
+const updateSnake = () => {
+    snake.unshift({x,y});
+    snake.forEach(v => {
+        ctx.fillRect(v.x,v.y , snakeSize , snakeSize);
+    });
+}
+
+const moveSnake = ()=> {
+    let location ={}
+    if(isInBoundary()) {
+        clearInterval(interval);
+        return;
+    }
+
+    clearLastLocation(location);
+   updateLocation()
+    updateFood();
+    updateSnake();
+    score.innerHTML = x+ ' ' + y + '  ' + food.x + " " + food.y + ' ' + snake.length;
+     
+}
+
+const start = () => {
+    snakeSize = size.value || 10;
+    snakeSpeed = speed.value || 10;
+    x = snakeSize;
+    y = snakeSize;
+    document.getElementById("btn").setAttribute('disabled', 'disabled');
+    interval = setInterval( moveSnake , 1000/snakeSpeed);
+    document.addEventListener('keyup', changeDirection);
+    makeFood();
+}
+
+const changeDirection = (event) => {
+    if([37,38,39,40].includes(event.keyCode)) keyCode = event.keyCode;
+ }
+
+ const isInBoundary = () => x + snakeSize * 2 > box || y+ snakeSize * 2 > box || y-snakeSize<0 || x-snakeSize<0;
+
+     
+    </script>
+</body>
+</html>

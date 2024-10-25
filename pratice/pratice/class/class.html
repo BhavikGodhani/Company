@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+    <script>
+        class Base {
+  constructor() {
+    this._protectedField = 'protectedValue';
+  }
+
+  // Protected method
+  _protectedMethod() {
+    console.log('This is a protected method');
+  }
+
+  // Public method that uses protected method
+  publicMethod() {
+    this._protectedMethod();
+  }
+}
+
+class Subclass extends Base {
+  // Subclass can access protected methods and fields
+  subclassMethod() {
+    this._protectedMethod();
+    console.log(`Accessing protected field: ${this._protectedField}`);
+  }
+}
+
+const instance = new Base();
+instance._protectedMethod(); // Error: '_protectedMethod' is not accessible
+console.log(instance._protectedField); // Outputs: 'protectedValue' (but not recommended)
+
+const subclassInstance = new Subclass();
+subclassInstance.publicMethod(); // Outputs: 'This is a protected method'
+subclassInstance.subclassMethod(); // Outputs: 'This is a protected method' and 'Accessing protected field: protectedValue'
+
+//     class Clock {
+//   constructor({template} ) {
+//     this.template = template;
+//   }
+
+//   render() {
+//     let date = new Date();
+
+//     let hours = date.getHours();
+//     if (hours < 10) hours = '0' + hours;
+
+//     let mins = date.getMinutes();
+//     if (mins < 10) mins = '0' + mins;
+
+//     let secs = date.getSeconds();
+//     if (secs < 10) secs = '0' + secs;
+
+//     let output = this.template
+//       .replace('h', hours)
+//       .replace('m', mins)
+//       .replace('s', secs);
+
+//     console.log(output);
+//   }
+
+//   stop() {
+//     clearInterval(this.timer);
+//   }
+
+//   start() {
+//     this.render();
+//     this.timer = setInterval(() => this.render(), 1000);
+//   }
+// }
+
+
+// let clock = new Clock({template: 'h:m:s'});
+// clock.start();
+    //   const abc ={
+    //     name:"bhavik",
+    //     FName:function(){
+    //      console.log(` Hello ${this.name}`);
+    //     }
+    //     };
+
+    //     const xyz = abc.FName;
+    //     console.log(xyz());
+    //     const final = xyz.bind(abc);
+    //     console.log(final());
+
+        // class User {
+        //     constructor(name){
+        //          this.name =name;
+        //     }
+        //     // name ="Bhavik"; // defind name 
+        //     sayHi() {
+        //         console.log(`Hello ${this.name}`)
+        //     }
+        // };
+        // let name = new User("Bhavik");
+        //   console.log(name.sayHi());
+
+            // User.sayHi;
+        // new User().sayHi();
+        // name.sayHi();
+        // console.log(typeof User);
+        
+    //     function makeClass(MyClass){
+    //     return class  {
+    //         sayHi() {
+    //             console.log(MyClass)
+    //         }
+
+    //     };
+    // }
+    //     let User = makeClass("Bhavik");
+    //     new User().sayHi();
+
+    // class User{
+    //     //autometic
+    //          constructor(name){
+    //         this.name = name
+    //     }
+        
+    //     get name(){
+    //      return this._name;
+    //     }
+    //     set name(value){
+    //         if(value.length < 4){
+    //             console.log("Short to Name");
+    //             return;
+    //         }
+    //         this._name = value;
+    //     }
+    // }
+
+    // let user = new User("Bhavik Godhani");
+    // console.log(user.name);
+    // user = new User("");
+    
+    class Permission {
+        constructor(canAdd,canRemove,canList){
+            this.canAdd = canAdd;
+            this.canRemove =canRemove;
+            this.canList = canList;
+        }
+
+        get canAdd(){
+          return  this._canAdd;
+        }
+        set canAdd(canAdd){
+         this._canAdd = canAdd;
+        }
+        get canRemove(){
+          return  this._canRemove;
+        }
+        set canRemove(canRemove){
+         this._canRemove = canRemove;
+        }
+        
+        get canList(){
+          return  this._canList;
+        }
+        set canList(canList){
+         this._canList = canList;
+        }
+        
+    }
+    class User extends Permission {
+        
+        constructor(...args){
+            super(...args);
+        }
+
+        static gst = 12;
+         products= [];
+        
+         addProduct(name,price){
+            if(!this.canAdd){
+                console.log(`You don't permission to add a product`);
+                return;
+            }
+            console.log('Product Added :' ,name);
+            this.products.push({
+                name,
+                price
+            });
+         }
+
+         removeProduct(name){
+            if(!this.canRemove){
+                console.log(`You don't permission to add a product`);
+                return;
+            }
+         const  index = this.products.findIndex(x => x.name.toLowerCase());
+           if(index > -1){
+              this.products.splice(index,1);
+              console.log('Product removed :',name);
+           }else{
+            console.log("Not Found!");
+           }
+         }
+
+         listProduct(){
+            if(!this.canList){
+                console.log(`You don't permission to add a product`);
+                return;
+            }
+            console.log(this.products);
+         }
+            
+
+         getProducts(){
+            if(!this.canList){
+                console.log(`You don't permission to add a product`);
+                return;
+            }
+            return this.products;
+         }
+          
+
+         static generateBill(products){
+            if(!products || !products.length){
+                console.log('No product found!');
+              return;
+            }
+            const totalPrice = products.reduce((prev,curr) => {
+        
+                return prev + curr.price;
+            },0);
+         console.log('Total billing:',totalPrice + (totalPrice * this.gst /100));
+         }
+         
+
+    }
+  const u1 = new User(true,true,true);
+  
+  u1.addProduct("Apple",70);
+  u1.addProduct("Banana",50);
+  u1.addProduct("Mango",60);
+
+ u1.removeProduct("Banana");
+ u1.listProduct();   
+ User.generateBill(u1.getProducts());   
+    </script>
+</body>
+
+</html>

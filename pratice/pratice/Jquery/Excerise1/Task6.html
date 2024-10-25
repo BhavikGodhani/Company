@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+    #iddiv{  
+    
+        display: flex;
+        margin-top: 50px;
+        margin-left: 20px;
+        gap: 10px;
+    }
+    #span,#p{
+         width:150px;
+         height: 30px;
+         background-color:cornflowerblue;
+         padding: 10px;
+    }
+    #button1{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    </style>
+</head> 
+<body>    
+    <div  id="iddiv"> 
+        <span id="span">This is a span</span>
+          <p id="p">This is a Paragraph</p>
+        </div>
+        <button id="button1">Click to see the effect</button> 
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function (){ 
+        $("#button1").click(function (){
+         var  count= $('#iddiv').children().length;
+         alert(count)
+        });
+    });
+  </script>
+</body>
+</html>

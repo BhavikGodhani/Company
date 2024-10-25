@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 1100px;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: aquamarine;
+            margin-left: 500px;
+        }
+        h3 {
+            font-size: 30px;
+            margin-left: 40px;
+        } 
+        .content{
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+        .header{
+            margin-top: 0;
+        }
+        #text
+        {
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        #btn{
+            border-radius: 5px;
+            background-color:yellowgreen;
+        }
+        #name{
+            border-radius: 5px;
+        }
+        #save{
+         background-color:blue;
+        }
+        #inputname{
+            width: 320px;
+        }
+        #popup{
+        position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 200px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: blue;
+    z-index: 999;
+        }
+        #inputData{
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        #cancelbtn{
+            margin-left: 10px;
+            margin-right: 25px;
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <h3>To-Do List</h3>
+        <div class="header">
+            <input type="checkbox" id="chkbx"> 
+            <button id="del">Delete</button>
+            <button id="upd">Update</button>
+        </div>
+        <div class="content">
+            <input type="text" id="fname" placeholder="Add your Task">
+            <input type="button"  id="btn" value="Add">
+        </div>
+        <table id="table">
+        </table>
+    </div>
+</div>
+   
+    <script src="./index.js"></script> 
+</body>
+</html>
+</body>
+</html>

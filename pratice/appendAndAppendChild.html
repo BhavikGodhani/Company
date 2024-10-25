@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify of element</title>
+</head>
+
+<body>
+  <div id="div">
+        <!-- <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p> -->
+    </div> 
+
+      <script>
+
+// const parent = document.createElement('div');
+// const child = document.createElement('p');
+// const appendValue = parent.append(child);
+// console.log(appendValue) 
+// const appendChildValue = parent.appendChild(child);
+// console.log(appendChildValue)
+
+////////////////////////////////////////////////////////
+
+const parent = document.createElement('div');
+const child = document.createElement('p');
+const childTwo = document.createElement('p');
+// parent.append(child, childTwo, 'Hello world'); // Works fine
+parent.appendChild(child, childTwo, 'Hello world');
+
+console.log(parent);
+
+
+//////////////////////////////////////////////
+        // append
+// let maindiv = document.getElementById("div")
+// let div = document.createElement("div")
+// // let p = document.createElement("p")
+// //  div.textContent = "Bhavik"
+// //  p.textContent = "Godhani"
+// div.append("Bhavik");
+// maindiv.append(div);
+  
+//appendChild
+
+let maindiv = document.getElementById("div")
+let div = document.createElement("div")
+// let p = document.createElement("p")
+//  div.textContent = "Bhavik"
+//  p.textContent = "Godhani"
+div.appendChild("Bhavik");
+// maindiv.append( div);
+
+
+
+
+
+ ///////////////////////////////
+
+    // function getListContent() {
+    //   let fragment = new DocumentFragment();
+    
+    //   for(let i=1; i<=3; i++) {
+    //     let li = document.createElement('option');
+    //     li.append(i);
+    //     fragment.append(li);
+    //   }
+    
+    //   return fragment;
+    // }
+    
+    // select.append(getListContent());
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////
+        //  div.insertAdjacentHTML("beforebegin","<p>11</p>")
+        //  div.insertAdjacentHTML("afterbegin","<p>11</p>")
+        //  div.insertAdjacentHTML("beforeend","<p>11</p>")
+        //  div.insertAdjacentHTML("afterend","<p>11</p>")
+
+        // let div = document.createElement('div');
+     
+
+    </script>
+</body>
+
+</html>

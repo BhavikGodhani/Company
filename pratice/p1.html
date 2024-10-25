@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+    </style>
+
+</head>
+
+
+<body>
+  <div class="container" onclick="setRandomColor()">
+    <div id="colorpad" style="width:900px;height:900px;">
+      <h1 id="bigName"></h1>
+      <div id="shortName"></div>
+    </div>
+    </div>
+    <script>
+// class NamedOne {
+//   constructor(first, last) {
+//     this.firstName = first;
+//     this.lastName = last;
+//   }
+  
+//   get fullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+  
+//   set fullName(fullName) {
+//     if(fullName.match(/\w+ \w+/))
+//       [this.firstName, this.lastName] = fullName.split(' ');
+//   }
+// }
+
+// let n=new NamedOne('John', 'Doe'); 
+
+// n.firstName = "Jane";
+
+//  console.log(n.firstName);
+//  console.log(n.fullName);
+
+  //  let a = [{
+  //   name:"my name is a 1", value:"abc 1"
+  //  },
+  //  {
+  //   name:"my name is a 2", value:"abc 2"
+  //  },
+  //  {
+  //   name:"my name is a 3", value:"abc 3"
+  //  },
+  //  {
+  //   name:"my name is a 4", value:"abc 4"
+  //  },
+  //  {
+  //   name:"my name is a 5", value:"abc 5"
+  //  },
+  //  {
+  //   name:"my name is a 6", value:"abc 6"
+  //  }]
+       
+ 
+
+    //     function getRandomColor(){
+        
+    //   var letters = "0123456789ABCDEF"
+    //   var color = '#'
+
+    //   for(let i = 0; i<6;i++){
+    //     document.getElementById("bigName").innerHTML = a[i].name
+    //    document.getElementById("shortName").innerHTML = a[i].value
+    //   color += letters[Math.floor(Math.random() * 16)]; 
+    //   }
+    //   return color;
+    // }
+    // let currentIndex = 0;
+    // function setRandomColor(){
+    //   let colorpad = document.getElementById("colorpad");
+    //         colorpad.style.backgroundColor = getRandomColor();
+    //         document.getElementById("bigName").innerHTML = a[currentIndex].name;
+    //         document.getElementById("shortName").innerHTML = a[currentIndex].value;
+    //         currentIndex = (currentIndex + 1) % a.length; 
+    // }
+
+
+
+     
+        // "use strict"
+        //       a = 5 ;
+        // console.log(a);
+
+        // const a = "hi";
+        // let value = 2;
+
+        // if(value > 1){
+        //   const  a = "Hi"
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+
+
+        // let a = [
+        //     {name: 'a' },
+        //     {name: 'b' },
+        //     {name: 'c' },
+        //     {name: 'd' },
+        //     ]
+
+        // let b = [
+        //     {name: 'a' , age: 10},
+        //     {name: 'x' , age: 11},
+        //     {name: 'b' , age: 14},
+        // ];
+
+        // let result = 0;
+        // for(let aa of b){
+        //     if(a.find((x) => x.name == aa.name)){
+        //       result += aa.age;
+        //     }
+        // }
+        //  console.log(result);
+
+
+        //   *
+        //  * *
+        // * * *
+
+        // let space = ""
+        //  function star(a){
+        //     for(let i = a; i>=1;i--){
+
+        //         // space
+        //         for(let j = a-i ; j>=1;j--){ 
+        //                 space += " "
+        //         }
+
+        //         //star
+        //         for (let k = i; k >= 1; k--) {
+        //                 space += " *";
+        //         }
+        //         space +="\n"
+        //     }
+        //       for(let i = 1; i<=a;i++){
+
+        //          // space
+        //          for(let j = 1 ; j<= a-i;j++){ // 
+        //             space += " "
+        //         }
+
+        //         //star
+        //         for (let k = 1; k <= i; k++) {
+
+        //                 space += " *";
+        //             }
+        //         }
+        //         space +="\n"
+        //     }
+        //     console.log(space)
+
+        // star(4)
+
+        // const arr = [
+        //    {id: "1", name: "Snatch", type: "crime"},
+        //    {id: "2", name: "Witches of Eastwick", type: "comedy"},
+        //    {id: "3", name: "X-Men", type: "action"},
+        //    {id: "4", name: "Ordinary People", type: "drama"},
+        //    {id: "5", name: "Billy Elliot", type: "drama"},
+        //    {id: "6", name: "Toy Story", type: "children"}
+        // ];
+
+
+        // function chnageDetail(arr){
+        // for(let i = 0; i<arr.length;i++){
+        //     let temp = arr[3].id 
+        //     arr[3].id = arr[4].id
+        //     arr[4].id = temp;
+        //     return arr;
+        // }
+        // }
+        // console.log(chnageDetail(arr));
+
+        //  let array= [1,2,3,4,5];
+        // console.log(array.filter((x) => {
+        //     if(x > 0){
+        //         return "hello"
+        //     }
+        // }));
+
+        /* function abc(){
+          let arr  = [1,2,3,4,5];
+           let ans = [];
+           let res ;
+           for(let i = 0; i<arr.length;i++){
+            ans[i] = arr.slice(i)
+             }
+             let a = []
+            for(let j = 0 ;j<ans.length;j++){
+                 let final = ans[j].reduce((p,c) => p+c,0)
+                 a.push(final)
+            }
+            console.log(a);
+        }
+        abc() */
+
+
+
+        // class StaticExample { 
+        //     name = 'jay';
+        //     static staticName = 'parth'
+
+        //     static sayName() { 
+        //         console.log(this.staticName, StaticExample.staticName);
+        //     }
+
+        // }
+
+        // const s = new StaticExample();
+        // console.log(s.name);
+        // console.log(s.staticName);  // not true
+        // console.log(StaticExample.staticName);
+        // StaticExample.sayName()
+
+
+
+        // class ClassWithPrivateField {
+        //     #privateField;
+        //         prv = 122;
+        //     constructor() {
+        //       this.#privateField = 42;
+        //     }
+        //     logPrivateField() {
+        //         console.log(this.#privateField);
+        //     }
+        //   }
+
+        //   class SubClass extends ClassWithPrivateField {
+        //     #subPrivateField;
+        //        field = 11
+        //     constructor() {
+        //       super();
+        //       this.#subPrivateField = 23;
+        //     //   console.log(this.#privateField);
+        //     }
+        //   }
+
+        // const subClass = new SubClass();
+        // // console.log(subClass.#subPrivateField);
+        // console.log(subClass.field);
+        // console.log(subClass.prv);
+        // subClass.logPrivateField();
+
+
+        // class Protected1 {
+        //     _protectedProp = 0
+        //     set protectedProp(value) {
+        //         if (value > 100) {
+        //           value = 0;
+        //         }
+        //         this._protectedProp = value;
+        //       }
+        //       get protectedProp() {
+        //         return this._protectedProp;
+        //       } 
+        // }
+
+        // let prop = new Protected1();
+        // prop.protectedProp = 20;
+        // console.log(prop._protectedProp);
+
+        // class readOnly {
+        //     _readOnlyProp = 10;
+        //     get readOnlyProp() {
+        //         return this._readOnlyProp;
+        //     }
+        // }
+
+        // let prop2 = new readOnly();
+        // prop2.readOnlyProp = 20;
+        // console.log(prop2.readOnlyProp);
+
+//     let obj = {
+//     x: 5,
+//     y: 10,
+//     showContext: function() {
+//         console.log(this, this.x, this.y);
+//     }
+// };
+
+// const newFunction = obj.showContext;
+
+// newFunction();
+
+// newFunction.bind(obj)() //
+// newFunction.call(obj)       //
+// newFunction.apply(obj)      //
+
+
+//    function BlowingBirth(str){
+ 
+//     let b = 0,b1 = 0, b2 = 0;
+
+//     for(let candle of str){
+//        let blow = Math.max(candle - b1 - b2,0)  //2 
+//         b += blow;                                //1
+//         b2 = b1;    
+//         b1 = blow;
+//     }
+//     return b;
+//   }
+//   console.log(BlowingBirth("1321"));
+
+//   function findSameName(sName,arr){
+//        let a = sName.toLowerCase()
+//        return arr.filter((x) => x.toLowerCase() === a ? arr : "Empty" )  
+// }
+//   console.log(findSameName("abcd",["za","aB","abc","zab","zbc"]));
+
+  
+// function diff(str1,str2){
+//    let a = str1.split("")
+//    let b = str2.split("")
+//      let arr = []
+//    for(let i =0 ;i<a.length;i++){
+//     for(let j =0 ;j<b.length;j++){
+//         if(a[i] != b[i]){
+//             arr.push(i); 
+//         }
+//     }
+//     }
+//   return [... new Set(arr)];
+// }
+//  console.log(diff("abcdefg","abcqetg"));
+
+
+// function valuechange(a) {
+//     let result = 0;
+//     for(let i = a.length-1; i>=0;i--){
+//       if(a[i] != 0){
+//         result += 2 ** a[i]
+//       }
+//     }
+//     return result;
+// }
+// // console.log(valuechange([1,0,1,0]));
+// let arr = [1,2,3,4]
+// //  CRUD
+// [arr[0],arr[1]] = [arr[1],arr[0]];
+
+// console.log(arr);
+
+// function sayHi() {
+//   phrase = "Hello";
+//      phrase = "bhavik"
+//   console.log(phrase);
+
+//   var phrase;
+// }
+// sayHi();
+  
+
+
+    </script>
+
+</body>
+
+</html>

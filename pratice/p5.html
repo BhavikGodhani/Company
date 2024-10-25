@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5</title>
+</head>
+<body>
+     <select id="select">
+        <option value="India">India</option>
+        <option value="Austilia">Austilia</option>
+        <option value="Pakistan">Pakistan</option>
+     </select>
+      <select id="newSelect">
+        <option >aa</option>
+        <option >bb</option>
+        <option >cc</option>
+      </select>
+
+</body> 
+<script>
+
+    let obj = {
+        "India" :["aa","bb","cc"],
+        "Austilia":["a","b","c"],
+        "Pakistan":["d","e","f"]
+        }
+
+                let select = document.querySelector("#select");
+                let state = document.getElementById("newSelect")
+        
+        function a(){
+            let value = select.value
+            let  newOption = obj[value];
+
+            while (state.firstChild) {
+                state.removeChild(state.firstChild);
+                }
+
+                newOption.forEach(option1 => {
+                let option = document.createElement("option");
+                option.textContent = option1;
+
+                state.append(option)
+            });
+    }
+  select.addEventListener("change",a)
+</script>
+</html>

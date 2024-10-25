@@ -1,0 +1,16 @@
+#clock {
+  width: 316px;
+  height: 140px;
+  margin-top: 100px;
+  margin-left: 340px;
+  border: 1px solid black;
+  background-color: aqua;
+  border-radius: 30px;
+}
+#weekday{
+  padding-left: 46px;
+}
+
+#date,#time {
+  padding-left: 76px;
+}

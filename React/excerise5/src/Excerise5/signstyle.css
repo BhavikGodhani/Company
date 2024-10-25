@@ -1,0 +1,14 @@
+.signup{
+    width: 250px;
+    height: 370px;
+    padding-left: 20px;
+    margin-top: 70px;
+    margin-left: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+#Password {
+    margin-bottom: 10px;     
+}

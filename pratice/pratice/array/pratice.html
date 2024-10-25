@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function primesum(){
+        //  const arr = [1,2,3,11,13,15,16,18,20];
+          
+        // const isPrime = n => {
+        //     if(n === 1 ){
+        //         return false;
+        //     }
+        //    else if(n === 2){
+        //       return true;
+        //     }
+        //     else {
+        //         for(let i = 2 ; i< n;i++){
+        //             if(n%i === 0){ // 
+        //                 return false;
+        //             }
+        //         }
+        //         return true;
+        //     }
+        // }
+
+        // const primesum = arr => {
+        //     let sum = 0;
+        //     for(let i =0 ; i<arr.length;i++){
+        //          if(!isPrime(arr[i])){
+        //             continue;
+        //          }
+        //          sum += arr[i];
+        //     }
+        //     return sum;
+        // }
+        // console.    log(primesum(arr))
+        // }
+        // primesum();
+    
+    //     function abc(arr){
+            
+    //       for(let i=0 ; i<arr.length ;i++){
+    //         if(arr[i].length > 5){
+    //             console.log(arr[i])
+    //         }
+    //       }
+    // }
+    // let arr = ["apple", "banana", "orange", "kiwi", "strawberry", "pineapple"]
+
+    // abc(arr)
+
+    
+ 
+// function palidrome(str){
+//                 let s = "";
+//                 const cleanstr = str.toLowerCase().split(" ").join("")
+//                 for(let i = cleanstr.length-1; i>=0 ;i--){
+//                   s  += cleanstr[i];
+//             }  
+//             console.log(s);
+//         if(str == str1){
+//             return true;
+//            }
+//           return false
+//             }
+//             console.log(palidrome("bannab"));      
+
+// function fac(n){
+// return (n === 0 || n === 1) ? 1 : n * fac(n-1);
+// }
+// console.log(fac(5)); //120
+
+
+// function samearr(arr1,arr2){
+ 
+//    console.log(arr2.filter((x) => arr1.indexOf(x) !==  -1)) // 3 4 5  
+//    console.log([...new Set([...arr1,...arr2])]);   // 12345)
+//    console.log(arr1.filter((x) => arr2.indexOf(x) !==  -1)) //  345
+//    console.log( arr1.filter((x) => arr2.indexOf(x) ==  -1)) //12   
+//    console.log( arr2.filter((x) => arr1.indexOf(x) ==  -1)) //67
+// }
+// console.log(samearr([1,2,3,4,5],[3,4,5,6,7]));
+
+
+// function stringchCount(str){
+//  let charcount = {};let a=[0,0,1,1,1,1,0,1,1,0,1,0,0,0];
+
+let ans =a.map((x) => a.filter((y) => y == x ).length);
+
+console.log(ans);
+ 
+//  for(let char of str){
+//   if(charcount[char]){
+//     charcount[char]++;
+//   }else{
+//     charcount[char] = 1;
+//   }
+// }
+// return charcount;
+// }
+// console.log(stringchCount("Hello"));
+
+// function larDiff(arr){
+//   const first = Math.min(...arr);
+//   const last = Math.max(...arr);
+//   return last-first; 
+  
+// }
+// console.log(larDiff([42,58,56,93,34,65]));
+
+// function stringsortarr(str){
+
+//  const arr = str.toLowerCase().split("").sort();
+//  console.log(arr.join(""));
+// }
+// stringsortarr("hello world how are you")
+
+
+// function sortNamesAlphabetically(arr){
+//  return arr.sort((a,b) =>  a.name > b.name ? 1 : -1)
+// }  
+// const objectsArray = [
+//     { name: "John" },
+//     { name: "Alice" },
+//     { name: "Bob" }
+// ];
+
+// const sortedNames = sortNamesAlphabetically(objectsArray);
+// console.log(sortedNames);
+
+// let arr = new Array(7).fill(9);  
+// console.log(arr);
+
+// let arr = [[1,2,3,4],[45,32,321,23],[12,2,3,2]];
+// let a = arr.flat(2);
+// console.log(Math.max(...a),Math.min(...a));
+ 
+// function modifity(arr, l) {
+//     if(l<1){
+//         return;
+//     }
+//   var temp = new Array(l - 1);
+
+//   for (var i = 0; i < l - 1; i++) {
+//    var A = arr[i] + arr[i+1]
+//      temp[i] = A;
+//   }
+//    modifity(temp,l-1)
+
+//    if(l == 2){
+//        console.log(temp);  
+// }
+// }
+// modifity([1, 2, 3, 4, 5], 5);
+ 
+// let a = [1, 1, 1, 2, 3, 3, 4, 5, 8];
+
+// let aa = a.map((x) => a.filter((y) => y == x ).length);
+// console.log(aa,a);
+
+
+// let elem,max = 0 ;
+
+//     aa.forEach((y,j)=> {
+//            if(y > max){
+//              max = y ;
+//              elem = j;
+//            }
+//     })
+//     console.log(a[elem]);
+//  console.log(a[elem]);
+// console.log(aa);
+// let ans = Math.max(...aa)
+// let ans1 = Math.min(...aa)
+// console.log(ans,ans1);
+
+// let ele ;
+// let maxcount = 0;
+// for(let i =0;i<a.length;i++){
+//     let count = 0;
+//     for(let j = 0; j<a.length;j++){
+//       if(a[i] == a[j]){
+//           count++;
+//       }
+//     }
+//     if(count > maxcount){
+//         maxcount = count;
+//         ele = a[i];
+//     }
+// }
+// console.log(ele,maxcount);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 140px;
+
+        }
+
+        .logo {
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+            margin-bottom: 0px;
+        }
+
+        img {
+            margin-top: 8px;
+            margin-left: 9px;
+            width: 200px;
+            margin-right: 120px;
+        }
+
+        .border {
+            border: 0.1px solid black;
+        }
+
+        #london:hover {
+            background-color: tomato;
+        }
+
+        #paris:hover {
+            background-color: tomato;
+        }
+
+        #tokyo:hover {
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="./rapidopslogo-revamped.png">
+                <input id="london" type="button" value="London">
+                <input id="paris" type="button" value="Paris">
+                <input id="tokyo" type="button" value="Tokyo">
+                <div class="border"></div>
+            </div>
+        </header>
+        <div class="text" style="display: none;">
+            <div class="london-text">
+                <h3>London is the capital of England</h3>
+                <img src="./london.jpeg">
+                <p>it is most populous city in the United Kingdom,with a metropolian area of 9 million inhabitants.
+                </p>
+            </div>
+            <div class="paris-text">
+                <h3>Paris is the capital of France</h3>
+                <img src="./paris.jpg">
+                <p>The Paris area is one of the largest population centres in Eupore with more than 12 million
+                    inhabitants.</p>
+            </div>
+            <div class="tokyo-text">
+                <h3>Tokyo is the capital of Japan</h3>
+                <img src="./tokyo.jpeg">
+                <p>Tokyo is also the financial, cultural, and industrial center of Japan and With a mentropolitan
+                    area of 40.8 million inhabitants.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#london').click(function () {
+            var title = $('em').attr('title');
+            $('p').text(title);
+        });
+    });
+
+
+
+</script>
+
+</html>

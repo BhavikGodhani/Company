@@ -1,0 +1,224 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-Await</title>
+ </head>
+ <body>
+    <script>
+     let p =() => new Promise((resolve, reject) => {
+    setTimeout(() => resolve("value1"),
+    5000);
+  })
+  
+  let p1 = () => new Promise((resolve, reject) => {
+    setTimeout( () => resolve("value2"), 3000);
+  })
+ 
+
+//   console.log("start");
+//  async function a(){
+//    let data = await p();
+//    console.log(data);
+//    let data1 = await p1();
+//    console.log(data1);
+//   }
+//   a()
+//    console.log("end");
+
+  // let a = p;
+  // a.then(result => console.log(result));
+
+//   let pr = new Promise((resolve, reject) => {
+//     resolve("value1");
+// }).then(result => console.log(result));
+ 
+// let p1r = new Promise((resolve, reject) => {
+//    resolve("value2");
+// }).then(result => console.log(result));
+ 
+// let ar = pr;
+ 
+// ar.then(result => console.log(result));
+
+//       const myPromise = Promise.resolve(Promise.resolve('Promise!'));
+ 
+//    function funcOne() {
+//      myPromise.then(res => res).then(res => console.log(res));
+//      setTimeout(() => console.log('Timeout!1', 0));
+//      console.log('Last line!1');
+//  }
+
+//      async function funcTwo() {
+//      const res = await myPromise;
+//      console.log(res);
+//      setTimeout(() => console.log('Timeout!2', 0));
+//      console.log('Last line!2');
+//      }
+
+//      funcOne();
+//      funcTwo();
+
+       
+// const  A = () => new Promise((res,rej) => {
+//          console.log("abc");
+//         setTimeout(() => {
+//             res("ok")
+//         },1000)
+//     })
+
+//  console.log("aaaaaaaaaaa");
+// async function  abc() {
+//     let a =  await A();
+//     console.log(a);
+// }
+// console.log("start");
+// abc()
+// console.log("end");
+
+  // const p = new Promise((resolve, reject) => {
+  //     resolve("Promise Fullfilled value");
+  //     // reject("Promise Rejected");
+  //   });
+    
+  //   async function getpData() {
+      
+  //     return  p;
+  //   }
+    
+  //   const dataNewPromise = getpData();
+  //   // console.log(dataNewPromise);
+    
+  //   dataNewPromise.then((res) => console.log(res));
+    
+  
+  //   const pr = new Promise((resolve, reject) => {
+  //       resolve("Promise pr done");
+  //   });
+    
+  //   async function handlePromise() {
+  //     const val = await pr;
+  //     console.log(val);
+  //   }
+    
+  //   handlePromise();
+
+
+
+// let api = new Promise((reslove,reject)=> {
+//         setTimeout(()=> {
+//           reslove("Success5");
+//         },2000); 
+//         });
+
+
+//    let api2 = new Promise((reslove,reject)=> {
+//         setTimeout(()=> {
+//           reslove("Success10");
+//         },1000);
+//         });   
+
+//       (async function() {
+//       console.log("Hello");
+//       let promise = await api;
+//       console.log("promise1");
+//       console.log(promise);
+//       let promise5 = await api2;
+//       console.log("promise2");
+//       console.log(promise5);
+//       })(); 
+
+// async function handle(){
+
+  //    return 2;
+// }
+// console.log(handle());
+
+  //  function firstName(){
+  //  return new Promise((resolve,reject) => {
+  //     setTimeout(() => {
+  //    console.log("name");
+  //    resolve("sucess");
+  //   },1000);
+  //  });
+  // }
+
+  // (async function (){
+  //   await firstName();
+  //   await firstName();
+  // })();
+
+
+    //  function api1(){
+    //     return new Promise((reslove,reject)=> {
+    //     setTimeout(()=> {
+    //       console.log("weather data1");
+    //       reslove("Success1");
+    //     },8000);
+    //     });
+    //  }
+    //  function api2(){
+    //     return new Promise((reslove,reject)=> {
+    //     setTimeout(()=> {
+    //       console.log("weather data2");
+    //       reslove("Success2");
+    //     },4000);
+    //     });
+    //  }
+
+    //   async function getWeatherData(){
+    //      let data = await api1();
+    //       console.log(data);
+    //     let data1 = await api2();
+    //      console.log(data1);
+    //   }
+    //   getWeatherData()
+     
+    //   function getData(dataId){
+    //    return new Promise((reslove,reject) => {
+    //     setTimeout(() => {
+    //       console.log("dataId" , dataId);
+    //       reslove("Success");
+    //         },1000);
+    //     });
+    //  }
+    //  async function getAllData(){
+    //   try{
+    //     await getData(1);
+    //   await getData(2);
+    //   }catch(er){
+    //     console.log(er);
+    //   } 
+    //  }
+    //   getAllData()
+    //IIFE
+    // (async function(){
+    //     await getData(1);
+    //     await getData(2);
+    //  })();
+
+
+// const myPromise = Promise.resolve(Promise.resolve('Promise!'));
+ 
+    function funcOne() {
+        myPromise.then(res => res).then(res => console.log(res," 1"));
+          setTimeout(() => console.log('Timeout!', 0));
+          console.log('Last line 1');
+    }
+ 
+        async function funcTwo() {
+        const res = await myPromise;
+        console.log(await res," 2");
+        setTimeout(() => console.log('Timeout!', 0));
+        console.log('Last line 2');
+        }
+         console.log("ds");
+        funcOne();
+        console.log("Gdsgsd");
+        funcTwo();
+        console.log("as");
+
+    </script>
+ </body>
+ </html>

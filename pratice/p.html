@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice </title>
+</head>
+<body>
+  <html>
+    <body>
+      <!-- dssd -->
+      <!-- <input type="text" id="elem"> -->
+
+          
+      <!-- <p id="elem">A. paragraph</p> -->
+      
+        <fieldset>
+          <input type="radio"  name="group1">
+          <input type="radio"  name="group1">
+        </fieldset>
+      
+        <fieldset id="group2">
+          <input type="radio" value="value1" name="group2">
+          <input type="radio" value="value2" name="group2">
+          <input type="radio" value="value3" name="group2">
+        </fieldset>
+  
+      <!-- <div>A div</div> -->
+ <script>
+  // let a = document.getElementById("elem")
+
+  // a.addEventListener("hello",function(e){
+  //   alert("ewfjdskmczewdsx")
+  // })
+  // let event = new Event("hello",{bubbles:true})
+  // document.dispatchEvent(event)
+  
+  // a.dispatchEvent(new CustomEvent("hello",{
+  //       detail: {name:"Bhavik"}
+  // }));
+  
+  
+      
+  // console.log(a.value);
+
+
+      // let node = document.createTextNode("dfghjkl")
+      // console.log(node);
+       //outerHTML 
+
+      //  let name = document.body.firstElementChild;
+        
+  
+
+
+      //  let name = document.body.firstElementChild.nextElementSibling.textContent;
+      //  let name1  = document.body.firstElementChild.tagName  
+      
+    //  let name = document.getElementById('elem').innerHTML ="<b>Bhavik</b>";
+    //  let name1 = document.getElementById('elem').textContent ="<b>Bhavik</b>"; 
+
+    //  console.log(name);
+  
+            //  for (let elem of document.body.childNodes) {
+            //    console.log(elem); // DIV, UL, DIV, SCRIPT
+            //           }
+  // let name = "ghjk";
+
+  // function ghj(){
+  // console.log(name);
+  // }
+  // ghj()
+
+
+  //  function abc(){
+  //    return function hj(){
+  //    var name= "hjkp";
+  //    console.log(name);
+  //    return true;
+  //      }
+  //      hj()
+  //     }
+  //  var qwe = abc();
+  //  var q = qwe.bind(abc);
+  //  console.log(q());
+
+  // let name = "bhavik";
+  // function abc(){
+    
+  //   return function qwe(){
+  //     name = "Bhavik";
+  //     return function ag(){
+  //       var name = "Bhavik Godhani";
+
+  //       console.log(name);
+  //       return true;
+  //     }
+  //   }
+    // console.log(name);
+  
+
+//  let asd = abc();
+//  let sdf = asd();
+//   console.log(sdf());
+  //functioal scope 
+//   function test(){
+//   var a = 10;
+//  console.log("Value of 'a' inside funuction", a); //10
+// }
+// test();
+// try{
+//     console.log("Triyng  to access 'a' defined in function ")
+//     console.log(a);  //error
+// }catch(e){
+//     console.log(e.message); 
+// }
+
+
+// const fName = "Bhavik";
+// function abc(){
+
+//   function display(){
+//     console.log(fName);
+//   }
+//   display()
+// }
+// abc();
+
+// const a = {
+//   a:10,
+// }
+// a.a = 30;
+// console.log(a);
+
+
+// let obj = {
+//   a:10,
+//   b:{
+//     c:10,
+//   },
+//   sayHello:function(){
+//     return obj.a
+//   }
+// }
+// let q = obj.sayHello();
+// console.log(q);
+// let obj = {
+//     message: "Hello, world!",
+//     a: [],
+//     b: {
+//       c:10
+//     },
+//     sayHello: function() {
+//       console.log(this.message);
+//     }
+//   };
+  
+//   // obj.sayHello();
+  
+//   let say = obj.sayHello();
+//  console.log(say);
+
+
+// this.name = "Savan";
+// this.age = 25;
+// let testingArrowFunction = () =>  {
+//     var student = {
+//         // name: "patel",
+//         display: function () {
+//             console.log('Name: ', this.name);
+//             console.log('Age: ', this.age);
+//             console.log('city: ', this.city);
+//         },
+
+//         displayWithArrow: () => {
+
+//             console.log('Name: ', this.name);
+//             console.log('Age: ', this.age);
+//             console.log('city: ', this.city);
+
+//         }
+
+//     };
+//     student.display();
+//     console.log('\n-------With Arrow Function1-------\n');
+//     student.displayWithArrow();
+// }
+// function wrapperFunction() {
+//      this.city = 'Ahmedabad';
+//     testingArrowFunction();
+// }
+// wrapperFunction();
+
+// function equal(){
+//    let a = 10 ;
+// let b = 10 ;
+// let c = 10;
+// console.log(a == b);
+    
+// }
+// equal()
+
+// let recipeMap =[
+//   ['cucumber', 500],
+//   ['tomatoes', 350],
+//   ['onion',    50]
+// ];
+
+// value , // value // add
+//0 1 2 
+// function abc(){
+//      let sum = 0 ;
+//     for(let i = 0; i <recipeMap.length ;i++){
+//        sum +=  recipeMap[i][1];
+//     }
+
+//     return sum;
+// }
+// console.log(abc());
+// let options = {
+//   size: {
+//     width: 100,
+//     height: 200
+//   },
+//   items: ["Cake", "Donut"],
+//   extra: true
+// };
+
+// [options.size.width,options.size.height] = [options.size.height,options.size.width];
+
+// console.log(options);
+
+// function swap(obj,key1,key2,idx1,idx2){
+//     //string 
+// if(typeof key1 !== "string" && typeof key2 !== "string"){
+//      console.log("key should be strings");
+//     return ;
+// }
+//  //obj  key valid 6e ke nai
+//  if(!(key1 in obj) || !(key2 in obj)){
+//     console.log("key not found in object.");
+//     return;
+//  }
+//  //idx number 6e ke nai
+//  if(typeof idx1 !== "number" && typeof idx2 !== "number"){
+//      console.log("Indices is be  numbers");
+//     return ;
+// }
+
+// if(idx1 < 0 || idx1 >= obj[key1].length || idx2 < 0 || idx2 >= obj[key2].length)
+// {
+//     console.log("Invalid indices.");
+// }
+
+// [obj[key1][idx1],obj[key2][idx2]] = [obj[key2][idx2],obj[key1][idx1]];
+// console.log(obj);
+// }
+
+
+
+// let obj = {
+//     a: [{x:10}, {x:20}],
+//     b: [{x:30}, {x:40}],
+//     c: [{x:50}, {x:60}],
+//     d: [{x:70}, {x:80}],
+//     e: [{x:90}, {x:100}],
+//     f: [{x:110}, {x:120}],
+// }
+// swap(obj,'b','c',0,0)
+
+// function showName(a) {
+//     console.log(this.name , a);
+// }
+
+
+// class Display1 {
+
+//     name = "React";
+//     displayName() {
+//         const a = showName.bind(this); //react
+//         a('a')
+//     }
+// }
+
+
+// class Display2 {
+
+//     name = "Angular";
+
+//     displayName() {
+//         showName.call(this)  
+//     }
+// }
+
+// const obj1 = new Display1();
+// const obj2 = new Display2();
+// obj1.displayName();
+// obj2.displayName();
+
+
+// class Test {
+//     constructor(name) {
+//         this.name = name
+//     }
+
+//     sayHi (newArg1='hello' , newArg2='hi') {
+//         console.log(this?.name , newArg1 , newArg2, this , '....');
+//     }
+
+//     sayHiArrow  = () => console.log(this , this.name , '....A')
+
+// }
+
+// function hi () {
+//     console.log(this);
+// }
+
+// const test1 = new Test('savan')
+
+// const sayHiArrow = test1.sayHiArrow;
+// const sayHi = test1.sayHi;
+// sayHiArrow();
+// sayHi()
+
+// sayHi.call(test1 , 'h1', 'h2');
+// sayHi.apply(test1 , ['h1', 'h2']);
+// hi()
+
+// // const callTest = sayHi.bind(test1);
+// // callTest('h1', 'h2')
+
+
+// let a = {
+//     name: 'savan',
+//     b: {
+//         a:1
+//     }
+// }
+// let b = {
+//     name: 'jay'
+// }
+
+// function test() {
+//     console.log(this);
+// }
+
+// test.call(b)
+
+
+
+
+// let obj = {a:1,b:5};
+ 
+// let abc = {c:1};
+// let obj = {
+//   a:[57,"bhai"],
+//   b:{
+//     c:"ghjiklp",       
+//     d:"yuiop",
+//     e:{
+//       f:[67,90],
+//     }
+//   }
+// }
+
+// for(let abc in obj){
+// [obj[abc][0],obj.b.e.f[0]] = [obj.b.e.f[0],obj[abc][0]];
+// console.log(obj[abc]);
+// }
+
+
+
+
+// let final = Object.assign(obj,abc);
+// console.log(final);
+// let a = 'outer a'
+// class BasicClass {
+//     a = 'hello';
+
+//     saySomething() {
+//         console.log(this.a);
+//     }
+// }
+
+
+// // Expression; the class is anonymous but assigned to a variable
+// const Rectangle = class {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+// };
+
+// Expression; the class has its own name
+// const Rectangle = class Rectangle2 {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+//     getArea () {
+//         console.log( this.height * this.width)
+//     }
+// };
+// const rect = new Rectangle2(5,7);
+// rect.getArea()
+
+// class FullName {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   result() {
+//     console.log(this.name, '......')
+//   }
+// }
+// let newName = new FullName("parth")
+// console.log( newName,newName.result())  // parth p
+// setTimeout(newName.result, 2000)
+
+
+
+// setTimeout(newName.result.bind(newName), 2000) 
+  
+// let dog = {
+//     count: 3,
+//     jumps: () => {
+//         // console.log(this)
+//         this.count++
+//     }
+// }
+
+// dog.jumps();
+
+// console.log(dog.count);
+
+
+
+// class BaseClass{
+//   // name = "Bhavik"
+//   constructor(name){
+//     this.name = name;
+//   }
+
+//   getname(){
+//    return this.name;
+//   }
+//   setname(value){
+//     this.name =value;
+//   }
+// }
+// const base = new BaseClass("Bhavik");
+
+// console.log(base.getname());
+
+// function object(obj){
+// [obj.a, obj.b] = [obj.b,obj.a];
+// console.log(obj);
+// }
+
+// let obj = {
+//     a: [{ x: 10 }, { x: 20 }],
+//     b: [{ x: 30 }, { x: 40 }],
+//     c: [{ x: 50 }, { x: 60 }],
+//     d: [{ x: 70 }, { x: 80 }],
+//     e: [{ x: 90 }, { x: 100 }],
+//     f: [{ x: 110 }, { x: 120 }],
+// }
+
+// function divisor(n){
+
+//   for(let i = 1 ;i < n ;i++){
+    
+//   }
+// }
+// divisor(7);
+
+// function numberToPower(n,a){
+//   return n ** a ;
+
+// }
+
+
+
+// console.log(numberToPower(3, 2));
+
+
+// function array(a){
+//  let arr =  new Array(a.length).fill(a);
+
+// }
+// let arr = [1,2,3];
+// array(arr);
+
+
+// object(obj);
+// class Objects {
+ 
+//     constructor(obj) {
+//         this.obj = obj;
+//     }
+ 
+//     add(key, index, k, v) { 
+//         // let keyin =`${key}`
+//         // console.log(typeof(keyin));
+//         console.log(typeof (this.obj), Array.isArray(this.obj));
+//         if (typeof (key) == "string") {
+//             if (typeof (this.obj) == "object" && !(Array.isArray(this.obj))) {
+//                 if (this.obj.hasOwnProperty(key) && Array.isArray(this.obj[key])) {
+//                     console.log(index, k, typeof(v));
+//                     console.log(this.obj[key]);
+//                     this.obj[key].splice(index, 0, { [k]: v })
+//                 }
+//             }
+//         }
+//     }
+ 
+//     remove(key, index) {
+//         if (typeof (this.obj) == "object" && !(Array.isArray(this.obj))) {
+//             if (this.obj.hasOwnProperty(key) && Array.isArray(this.obj[key])) {
+//                 if (this.obj[key].length > index) {
+//                     this.obj[key].splice(index, 1);
+//                 }
+//             }
+//         }
+//     }
+ 
+//     swap(key1, key2, index1, index2) {
+//         // console.log("outswap");
+//         if (typeof (this.obj) == "object" && !(Array.isArray(this.obj))) {
+//             if (this.obj.hasOwnProperty(key1) && this.obj.hasOwnProperty(key2) && Array.isArray(this.obj[key1]) && Array.isArray(this.obj[key2])) {
+//                 if (this.obj[key1].length > index1 && this.obj[key2].length > index2){
+//                     // console.log("inswap");
+//                 let temp = this.obj[key1][index1];
+//                 console.log(temp);
+//                 console.log(this.obj[key1][index1]);
+//                 this.obj[key1][index1] = this.obj[key2][index2];
+//                 console.log(this.obj[key1][index1]);
+ 
+//                 this.obj[key2][index2] = temp;
+//                 }
+//             }
+//         }
+//     }
+ 
+//     print() {
+//         console.log(this.obj);
+//     }
+ 
+ 
+// }
+
+
+// class Objects {
+ 
+//   constructor(obj){
+//     this.obj = obj;
+//   }
+
+//   add(key,idx,k,v){
+ 
+//     if(typeof this.obj === "object" && !(Array.isArray(this.obj))  && this.obj.hasOwnProperty(key) && typeof key === "string" &&(Array.isArray(this.obj[key]))){
+//       this.obj[key].splice(idx,0,{[k]:v});
+//       console.log(this.obj[key],{[k]:v});
+//     }
+//   }
+//   remove(key,idx){
+//     if(typeof this.obj === "object" && !(Array.isArray(this.obj))  && this.obj.hasOwnProperty(key) && typeof key === "string" &&(Array.isArray(this.obj[key])) && this.obj[key].length > idx){
+//       this.obj[key].splice(idx,1);  
+//   }
+// }
+//   swap(key1, key2, index1, index2){
+//    if(typeof this.obj === "object" && !(Array.isArray(this.obj))  && this.obj.hasOwnProperty(key1) && this.obj.hasOwnProperty(key1) && typeof key1 === "string" && typeof key2 === "string"  &&(Array.isArray(this.obj[key2])) && obj[key1].length > index1 && obj[key2].length > index2){
+//      [this.obj[key1][index1],this.obj[key2][index2]] = [this.obj[key2][index2],this.obj[key1][index1]];
+//    }     
+//   }
+
+//   print(){
+//   console.log(this.obj);
+//   }
+// }
+// const a = new Objects(obj);
+ 
+// // a.print();
+// a.add("a", 1, "y", 5);
+// a.print();
+// // a.remove("a",1);
+// // a.print();
+// a.swap("b","c",0,0);
+// a.print()
+
+// function foursum(arr){
+//     for(let i = 0; i<arr.length;i++){
+//       for(let j = i+1; j<arr.length;j++){
+//          for(let k =j+1; k<arr.length;k++){
+//             for(let l = k+1; l<arr.length;l++){
+//                if(arr[i] + arr[j] + arr[k] + arr[l] == 0){
+//                  console.log(arr[i],arr[j],arr[k],arr[l]);
+//                   document.write(arr[i]);
+//                   document.write("\n");
+//                   document.write(arr[j]);
+//                   document.write("\n");
+//                   document.write(arr[k]);
+//                   document.write("\n");
+//                   document.write(arr[l]);
+//                   document.write("\n");
+//                }
+//             }
+//          }
+//       }
+//     }
+//   }
+//   foursum([1,0,-1,0,-2,2],0)
+
+// function missingrep(arr){
+ 
+//  let ans = [];
+ 
+//  for(let i = 0; i < arr.length;i++){
+//   for(let j = i+1;j<arr.length;j++){
+//     if(arr[i] == arr[j]){
+//       ans.push(arr[i])
+//     }
+//   }
+//  }
+// let abc = [...new Set(arr)].sort();
+// let count = 0; 
+
+// for(let i = 0; i<abc.length;i++){  //0 1 2 3 
+//   count++; 
+//   if(abc[i] != count){
+//     ans.push(count);
+//   }
+// }
+// console.log(ans);
+// }
+// missingrep([3,1,2,5,3])
+ // API key (replace with your own)
+ 
+  // let abc = document.getElementById("name")
+
+  //     abc.setAttribute("value","hjk")
+
+  //     console.log(abc.getAttribute("value"));  
+  // "use strict"
+//   x = 5;
+// console.log(x)
+
+let user = {
+  name: "John",
+  money: 1000,
+  // for hint="string"
+  toString() {
+    return `{name: "${this.name}"}`;
+  },
+  
+  // for hint="number" or "default"
+  valueOf() {
+    return this.money;
+  }
+  
+};
+alert(user); // toString -> {name: "John"}
+alert(+user); // valueOf -> 1000
+alert(user + 500); 
+</script>
+</body>
+
+</html>

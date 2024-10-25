@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+   
+
+
+<body>
+
+    <script>
+
+// // Regex patterns
+// let uppercaseRegex = /[A-Z]/;
+// let lowercaseRegex = /[a-z]/;
+// let digitRegex = /[0-9]/;
+// let specialCharRegex = /[!@#\$%\^&*]/;
+// let sequenceRegex = /^(?!.*(abc|cba|Abc|Cba|bac|Bac)).*$/;
+// let nonConsecutiveDigitsRegex = /^(?!.*(012|123|234|345|456|567|678|789|890|098|987|876|765|654|543|432|321|210)).*$/;
+
+// // Combine all regex patterns
+// let combinedRegex = new RegExp(
+//   `${uppercaseRegex.source}${lowercaseRegex.source}${digitRegex.source}${specialCharRegex.source}`
+// );
+
+// // Validate input
+// if ( userInput.length >= 8 && combinedRegex.test(userInput) && sequenceRegex.test(userInput) && nonConsecutiveDigitsRegex.test(userInput)) {
+//   console.log("Input is valid");
+// } else {
+//   console.log("Input is invalid");
+// }
+
+
+
+//    function serach(str,word){
+//      let newArr =str.split("")
+//      let arr = [];
+//       for(let i = 0 ;i<newArr.length;){
+//         arr.push(newArr[i]+newArr[i+1])
+//        i++;
+//        i++;
+//       }
+      
+//       for(let i = 0; i<arr.length;i++){
+//         if(arr[i] == word){
+//           arr[i] = arr[i].toUpperCase()
+//         }
+//     }
+//     console.log(arr);
+//  }
+//    serach("aabbccddaa","aa");
+
+//    output = ["aa","bb","cc","dd","aa"]
+
+//    function remove(str){
+//    const arr = str.split(" ");
+//    arr.splice(6,1);
+//    console.log(arr.join(" ")); 
+     
+//    }
+//   remove("The quick brown fox jumps over the lazy dog");
+    
+
+  
+
+
+
+
+
+
+        // let str = "Bhavik Godhani";
+        //Bhavik godhani
+        // let abc = str.split(" ");
+        // let spillted = abc[0].toLowerCase();
+        // let spillted1 = abc[1];
+        //  console.log(spillted +" "+ spillted1);
+        //B*****Godhani
+        // let split = abc[0].slice(0,1).padEnd(abc[0].length,"*");
+        // let split1 = abc[1];
+        // console.log(split + split1); 
+        // let str = "123456789101";
+        //"*********9101"
+        // let card = str.slice(-4);
+        // let cardCom = card.padStart(str.length,"*");
+        //  console.log(cardCom);
+
+        // let str = "Bhavik Godhani";
+
+        // console.log(str.indexOf("k Go")); //indexfind
+        //   console.log(str.charAt(7));
+        //  console.log(str.charCodeAt("t")); //chr
+        //  console.log(str.endsWith("ni"));  //true of false
+        // console.log(str.includes("h")); //true 
+
+        //****5678****
+        //    let str = "123456789101";
+
+        //    function convertNumber(str){
+        //     let arr = str.split("");
+        //     arr.splice(0,4,"*","*","*","*");
+        //     arr.splice(8,12,"*","*","*","*");
+
+        //      console.log(arr.join("")); 
+        //    }
+         //    convertNumber(str)
+      
+         //abc***f@gmail.com
+    
+
+
+
+        // function emailVadilation(str){
+        // var [avg,splitted] = str.split("f");
+        // console.log(avg,);
+        
+        // let final = (new Array(avg.length-1)).join("*");
+    
+        // return `${avg.slice(0,3)}${new Array(avg.length-1).join("*")}f${splitted}`;
+        // }
+        // let str = "abcdcccuewurudef@gmail.com";
+        // console.log(emailVadilation(str));
+
+        //  function validation(str){
+        //     var [avg,split] = str.split("@");
+        //     var part1 = avg.slice(0,5);
+        //     var part2 = split;
+        //   return `${part1}...@${part2}`
+
+        //  }
+        // let str ="robin_singh@example.com";
+        // console.log(validation(str));
+  
+ 
+        // function reverse(str){
+        //  const arr =  str.split("").sort()
+        //     console.log(arr.join(""));
+        // }
+        // reverse("United States")
+  
+//     function words(word){
+//      const arr = word.split(" ",4).join(" ");
+     
+//      console.log(arr);
+//     }
+//   words("The quick brown fox jumps over the lazy dog")
+
+//          const arr = str.split(" ");
+//           arr.unshift("Javascript")
+//          console.log(arr.join(" "));
+
+        // uncamelize("We are doing some exercises.");  
+        
+        
+
+        //     const str1 = str.repeat(3);
+        //       console.log(str1);
+        //   uncamelize("Ha!")
+        // console.log(arr[0]+"_W"+arr[1]);
+
+
+            // function uncamelize(str,des){
+            //      const arr = str.split('W');
+            //      console.log(arr[0]+`${des}W`+arr[1]);
+            // } 
+            // uncamelize('helloWorld'); 
+            // uncamelize('helloWorld','-'); 
+            // uncamelize('helloWorld','_');
+
+          
+
+
+
+
+            //  const [arr,arr1] = str.split(" ");
+            // const arr2 = arr1.charAt(0).toUpperCase() + arr1.slice(1);
+            //   const arr3 = arr+ arr2;
+            // console.log(arr3)
+            // let first = str.toLowerCase().split(" ");
+            // console.log(first.join("-"));
+            // let arr = str.split(" ");
+            //  let arr2 = arr[0][0].toUpperCase();
+            //  console.log(arr2+"s "+arr[1]+" "+arr[2]);
+            //     console.log(str.charAt(0).toUpperCase() + str.slice(1));     
+            //    console.log(str.split(" ").map((word) => word.toUpperCase()[0] + word.slice(1)).join(" "));
+            //  console.log(str[0].toLowerCase()+str[1].toUpperCase()+str[2].toLowerCase()+str[3].toUpperCase()+str[4].toUpperCase())
+            
+            
+        // }
+        //  dased("Robin Singh from USA")  
+        //  dased("js string exercises");
+        // dased("AaBbc")
+        
+        // camelize("JavaScript exercises");
+     
+        // "JavaScriptExercises"
+        // "JavaScriptExercises"
+        // "JavaScriptExercises"
+        //  aAbBC
+
+ 
+    </script>
+
+</body>
+
+</html>

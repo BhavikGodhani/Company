@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .invalid { border-color: red; }
+        #error { color: red }
+      </style>
+</head>
+<body>
+    Input Value:<input type="text" id="input">
+          <div id="error"></div>
+    <script>
+       input.onblur = function (){
+        if(!input.value.includes("@")){
+         input.classList.add("invalid");
+         error.innerHTML = "Please enter valid input"
+        }
+
+       }
+       input.onfocus = function (){
+        if(this.classList.contains('invalid')){
+            this.classList.remove("invalid")
+            error.innerHTML = "";
+        }
+       }
+    </script>
+</body>
+</html>

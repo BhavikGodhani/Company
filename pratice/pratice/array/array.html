@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  
+    
+    <script>
+    //   async function data(){
+    // try {
+    //         let response = await fetch("https://jsonplaceholder.typicode.com/todos/1")
+    //         let data = await response.json()
+    //         console.log(data);
+    // }
+    // catch(er){
+    //     console.log("Fetch Error",er);
+    // }
+    //  }
+    //  data()
+
+// const array = ['India','Pakistan'];
+// Array.prototype.myJoin = function (seperator = ','){
+//   let result = '';
+//   for(let i = 0; i<array.length;i++){
+//     result += array[i];
+
+//     if(i<array.length-1){
+//       result += seperator;
+//     }
+//   }
+//   return result;
+// }
+// console.log(array.myJoin(' vs '));
+
+// function sortOfVobel(s,v){
+//   if(typeof s === "string"){
+//       return [...s].map(x => v.includes(x)? `|${x}`:`${x}|`);
+//     }
+//     console.log([...s]);
+// }
+//   let vobels = ['a','e','i','o','u','A','E','I',"O",'U'];
+// console.log(sortOfVobel("Rnd Te5T",vobels));
+
+// function shift(arr,rot){
+ 
+//   for(let i = 0 ;i <rot ;i++){
+//   arr.unshift(arr.pop());
+//   }
+//   return arr;
+// }
+// console.log(shift([1,2,3,4,5],2));
+
+
+
+// const arr = [
+//    {id: "1", name: "Snatch", type: "crime"},
+//    {id: "2", name: "Witches of Eastwick", type: "comedy"},
+//    {id: "3", name: "X-Men", type: "action"},
+//    {id: "4", name: "Ordinary People", type: "drama"},
+//    {id: "5", name: "Billy Elliot", type: "drama"},
+//    {id: "6", name: "Toy Story", type: "children"}
+// ];
+
+// var studentObject={
+//    101: "John",
+//    102: "David",
+//    103: "Bob"
+// }
+// var studentDetails = Object.assign({}, studentObject)
+// studentDetails = Object.entries(studentObject).map(([studentId,studentName])=>({studentId ,studentName}));
+// console.log(studentDetails);
+
+
+// const arr1 = [
+//    {"4": "Rahul"},
+//    {"7": "Vikram"},
+//    {"6": "Rahul"},
+//    {"3": "Aakash"},
+//    {"5": "Vikram"}
+// ];
+
+// for(let arr of arr1){
+//   const key = Object.keys(arr);
+//   const value = Object.values(arr);
+
+//      console.log(value);
+//   }
+
+//   let obj = [
+//     {num:20},
+//     {num:30},
+//     {num:40}
+//   ];
+
+    
+// for(let object of obj){
+//   const values = Object.values(object);
+//   console.log(values);
+// }
+     
+  // function swap(arr){
+  //   for(let i = 0 ; i<arr.length;i++){
+  //     for(j = 0 ;j<arr.length;j++){
+  //       if(arr[j] > arr[j+1]){
+  //      [arr[j],arr[j+1]] = [arr[j+1],arr[j]];
+  //       }
+  //     }
+  //   }
+  //   console.log(arr);
+  // }
+  // console.log(swap([234, 43, 55, 63, 5, 6, 235, 547]));
+
+// function short(){
+// let arr = [9,7,5,3,2];
+// let length = arr.length;
+//  let ans;
+//  let post = 1
+//  for(let i =1 ;i <=length-1;i++){
+//  ans = arr.reduce((acc,curr) => {
+//     if(post < arr.length){
+      
+//      acc.push(curr-arr[post]);
+//       post++;
+//     }
+//     return acc;
+//   },[]);
+//   arr = ans;
+//   post = 1;
+//  }
+
+//  console.log(ans)
+// }
+// short(); 
+
+
+//   function UpperCase(str){
+//    return str.replace(/([a-z]+)|([A-Z]+)/g,(match,str)=>{
+//    return str ? match.toUpperCase() : match.toLowerCase();
+//    } );
+//    }
+  
+// console.log(UpperCase("The Quick Brown Fox"));
+
+  //  let arr =  [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+    
+  //  arr.sort((a,b) => a -b);
+  //  console.log(arr);
+
+//   const string = function(str){
+//  let strNum = str.toString();
+//  let result = strNum[0];
+
+//  for(let i = 1;i<strNum.length-1;i++){
+
+//   if(strNum[i-1]%2 === 0 && strNum[i]%2 === 0){
+//     result += '-' + strNum[i];
+//   }
+//   result += strNum[i];
+//  }
+//  return result;
+// }
+//  console.log(string("025468"));
+
+//        function topSecret(str){
+//       var chars=str.split("");
+//   for(i=0;i<chars.length;i++){
+//     var tmp=chars[i].charCodeAt();
+//     if(tmp>67&&tmp<91||tmp>99&&tmp<123)
+//       tmp-=3;
+//     else{
+//         if(tmp<68&&tmp>64||tmp<100&&tmp>96)
+//           tmp+=23;
+//     }
+//     chars[i]= String.fromCharCode(tmp);
+//   }
+//   return chars.join("");
+// }
+// console.log(topSecret("Pb qdph lv Mrkq"));
+
+//  function  array(arr){
+//  let count = 0 ;
+//   for(let i = 0; i< arr.length ;i++){
+//     if(arr[i] == 1){
+//       count++;
+//     }
+//   }
+
+//   for(let i = 0 ;i<count ;i++){
+//    arr[i] = 1;
+//   }
+//   for(let i = count ;i<arr.length;i++){
+//     arr[i] = 0;
+//   }
+//   console.log(arr);
+ 
+// }
+//  console.log(array([1,1,0,0,1,1,1,0,0,1]));
+
+// let arr = [
+// {num:10}
+// ,{num:20},
+// {num:30}
+// ];
+
+// let index;
+
+// for(let i = 0; i<arr.length;i++){
+
+//     if(arr[i].num == 20) {
+//     index = arr[i];
+//     }
+// }
+
+// let index = arr.findIndex((x) =>
+// x.num == 20);
+// console.log(index);
+
+  
+  // [1,2,3,4,5] = [48]
+  // 3 5 7 9  // 8 12 16 // 20 28 // 48 
+ 
+// let obj = {
+//   0: "Hello",
+//   1: "World",
+//   2: "Bhavik",
+//   length: 3
+// }
+
+// let ans = Array.from(obj);
+// console.log(ans);
+
+
+</script>
+</body>
+</html>

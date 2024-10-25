@@ -1,0 +1,39 @@
+Question 1: Closures and Scoping
+Q1: Write a function createCounter that creates a counter. The counter should have a method increment that increases the counter by 1 and a method getValue that returns the current counter value.
+ 
+Question 2: Promises and Async/Await
+Q2: Write a function fetchData that fetches data from a given URL and logs it to the console. Use async/await for handling asynchronous operations.
+https://jsonplaceholder.typicode.com/todos/1
+ 
+Question 3: Advanced Array Methods
+Q3: Implement a function flattenArray that flattens a nested array of any depth.
+ 
+// Example usage: console.log(flattenArray([1, [2, [3, [4]], 5]])); // Output: [1, 2, 3, 4, 5]
+ 
+Question 4: Prototypal Inheritance
+Q4: Implement a simple Person class and extend it to create a Student class using prototypal inheritance. The Student class should have an additional method study.
+ 
+ 
+Question 5: Event Handling
+Q5: Write a function addClickHandler that adds a click event listener to a button. When the button is clicked, it should toggle the text color between red and blue.
+ 
+ 
+Question 6: Debouncing
+Q6: Implement a debounce function that ensures a given function is only called once within a specified delay period.
+ 
+ 
+Question 7: Currying
+Q7: Implement a function curry that takes a function and returns a curried version of it.
+console.log(curriedAdd(1)(2)(3)); // Output: 6 
+console.log(curriedAdd(1, 2)(3)); // Output: 6 
+console.log(curriedAdd(1, 2, 3)); // Output: 6
+ 
+Question 8: Regular Expressions
+Q8: Write a function isValidEmail that checks if a given string is a valid email address using a regular expression.
+ 
+Question 9: Form Validation
+Q9: Create a simple HTML form with inputs for username, email, and password. Write JavaScript to validate the form fields before submission, ensuring the username is at least 3 characters, the email is in a valid format, and the password is at least 8 characters.
+ 
+ 
+Question 10: Dynamic List
+Create an HTML page with an input field, a button, and an empty list. Write JavaScript to add items to the list when the button is clicked. The new item should be the text from the input field.

@@ -1,0 +1,16 @@
+
+.app-container {
+  display: flex;
+  height: 100vh; 
+}
+
+.Sidebar {
+  flex: 1;
+  background-color: #f4f4f4; 
+  padding: 20px; 
+}
+
+.Main {
+  flex: 3; 
+  padding: 20px; 
+}

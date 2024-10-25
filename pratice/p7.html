@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p7</title>
+</head>
+<body>
+    <!-- <p>A paragraph</p> -->
+    <!-- <div>A div</div> -->
+   
+    <!-- <input type="text" id="myInput" value="Hello World"  disabled> -->
+    <input id="input" type="checkbox" checked>
+
+    <script>
+      console.log(input.getAttribute('checked')); // the attribute value is: empty string
+      alert(input.checked); 
+      // Accessing properties
+      var inputElement = document.getElementById('myInput');
+    
+      // Log initial property values
+      console.log('Initial Property Values:');
+      console.log('Value:', inputElement.value); // Hello World
+      console.log('Disabled:', inputElement.disabled); // true;
+    
+      // Changing properties dynamically
+      inputElement.value = 'Updated Value';
+      inputElement.disabled = false;
+    
+    //   // Log updated property values
+      console.log('Updated Property Values:');
+      console.log('Value:', inputElement.value); //Updated Value
+      console.log('Disabled:', inputElement.disabled); //false
+    
+    //   // Accessing attributes
+      var valueAttribute = inputElement.getAttribute('value'); // attribute: value
+      var disabledAttribute = inputElement.getAttribute('disabled'); // attribute: disabled
+    
+    //   // Log attribute values
+      console.log('Attribute Values:');
+      console.log('Value Attribute:', valueAttribute);
+      console.log('Disabled Attribute:', disabledAttribute);
+    
+    //   // Changing attributes dynamically
+      inputElement.setAttribute('value', 'New Value');
+      inputElement.removeAttribute('disabled');
+    
+    //   // Log updated attribute values
+      console.log('Updated Attribute Values:');
+      console.log('Value Attribute:', inputElement.getAttribute('value'));
+      console.log('Disabled Attribute:', inputElement.getAttribute('disabled'));
+    ;
+// para.textContent = 'This is a new paragraph.';
+
+// // Create a text node
+// var textNode = document.createTextNode('This is a text node.');
+
+// // Create a comment node
+// var commentNode = document.createComment('This is a comment node.');
+
+// // Append these nodes to the document body
+// document.body.appendChild(para);
+// document.body.appendChild(textNode);
+// document.body.appendChild(commentNode);
+        // console.log(elem.innerHTML);
+        // console.log(elem.outerHTML);
+        // console.log(elem.textContent);
+        // console.log(elem.innerText);
+    //   alert( document.body.innerHTML ); // read the current contents
+    //   document.body.innerHTML = 'The new BODY!'; // replace it
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+</head>
+<body>
+    <script>
+   
+//     let User = {
+
+//     name:'Bhavik',
+//     email:'BhavikGodhani31@gmail.com',
+//     fName : function(){
+//    console.log("Foram");
+//      }        
+//     }
+
+//     let Admin = {
+//     name:'Foram',
+//         __proto__:User,
+//     gName: function(){
+//      console.log("Bhavik");
+//     }
+//     }
+    // console.log(Admin.getName());
+
+
+
+//     function User(name,age){
+//         this.name = name;
+//         this.age  = age;
+//         gName = function(){
+//             // ...
+//         }
+//     }
+//     User.prototype.getName = function(){
+//         return this.name;
+//     }
+
+//     const u1 = new User("Bhavik",21);
+//     const u2 = new User("Foram",19);
+//     // console.log(u1.getName);
+
+//    u2.__proto__.setName = function(){
+//      this.name = name;
+//    }
+  
+//    console.log(u2.__proto__);
+//    u1.setName("Kamal Hasan");
+//    console.log(u2.getName());
+    
+ 
+            function User1() {}
+
+            User1.prototype ={
+            fName : function(){
+            console.log("Meow!");
+            },    
+            };
+        
+            function User2() {}
+            User2.prototype ={
+            fName1 : function(){
+            console.log("Bark!");
+            },    
+            __proto__:User1.prototype
+            };
+            const fluffy = new User2();
+
+            console.log(fluffy);
+            fluffy.fName();
+            fluffy.fName1();
+        //     function Admin1() {}
+        //  Admin1.prototype = {
+        //         __proto__:User1.prototype,
+        //     gName: function(){
+        //      console.log("Bhavik");
+        //     }
+        //     }
+        // console.log(Admin.getName());
+    </script>
+
+</body>
+</html>

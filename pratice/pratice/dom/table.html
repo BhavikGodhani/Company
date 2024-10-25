@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100px;
+        height: 100px;
+        
+    }
+    td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <table id="content">
+        <thead>
+            <tr>
+                <th data-type="number">Number</th>
+                <th data-type="number">Age</th>
+                <th data-type="string">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>5</td>
+            <td>18</td>
+            <td>Aman</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>20</td>
+            <td>Jay</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>16</td>
+            <td>Manas</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>23</td>
+            <td>Foram</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>21</td>
+            <td>Alice</td>
+        </tr>
+       </tbody>
+    </table>
+    <script>
+        content.onclick = function (e) {
+    if(e.target.tagName != "TH") return ;
+let th = e.target;
+sortgrid(th.cellIndex,th.dataset.type)
+}
+function sortgrid(colNum,type){
+   let tbody = content.querySelector('tbody');
+   let rowArray = Array.from(tbody.rows);
+   
+   let compare;
+   switch(type){
+       case 'number':
+           compare =function(rowA,rowB){
+               return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML ;
+            };
+            break;
+            case 'string':
+                compare =function(rowA,rowB){
+                    return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
+                };
+                break;
+                
+  }    
+  rowArray.sort(compare);
+  tbody.append(...rowArray);
+}
+
+</script>
+</body>
+</html>

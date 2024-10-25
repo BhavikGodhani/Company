@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P8</title>
+</head>
+<body>
+   <input type="text" class="jay" id="input" value="Hello world"> 
+
+  
+
+    <script>
+    
+         let input = document.getElementById("input");
+         
+         
+         console.log(input.value);
+         console.log(input.getAttribute("value"));  
+        //  input.value = "new value"
+         
+         //  input.id = "newid"
+         //  input.className = "newClass"
+         //  input.type = "button"
+         //  input.name = "jay"
+         
+         input.setAttribute("value","ValueUpdate")
+         console.log(input.value);
+         console.log(input.getAttribute("value"));
+        // //  console.log(input.type);
+        // //  console.log(input.name);
+        // //  console.log(input.getAttribute("type"));
+        // //  console.log(input.getAttribute("name"));
+        // //  console.log(input.getAttribute("id"));
+        // //  console.log(input.getAttribute("class"));
+
+
+
+
+         console.log(input.value);
+         console.log(input.getAttribute("value"));  
+
+
+// let input = document.querySelector('input');
+
+// // // attribute => property
+// input.setAttribute('value', 'text');
+// console.log(input.value); // text
+
+// // NOT property => attribute
+// input.value = 'newValue';
+// alert(input.getAttribute('value'));
+// console.log(input.value); 
+     </script>
+</body>
+
+</html>  
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Styling and Class Manipulation</title>
+<style>
+  .highlighted {
+    background-color: yellow;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div id="myElement">
+  Click me to change style and class!
+</div>
+
+<script>
+  // Get the element
+  let element = document.getElementById('myElement');
+
+  // Add event listener for click event
+  element.addEventListener('click', function() {
+    // Example 1: Dynamic style change
+    element.style.color = 'blue';
+    element.style.fontSize = '24px';
+
+    
+    element.classList.toggle('highlighted');
+  });
+</script>
+
+</body>
+</html> -->

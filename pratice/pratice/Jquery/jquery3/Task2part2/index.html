@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            margin-left: 400px;
+            margin-top: 140px;
+            width: 545px;
+            height: 474px;
+            border: 1px solid black;
+        }
+        img {
+            margin-top: 8px;
+            margin-left: 9px;
+            width: 200px;
+            margin-right: 120px;
+        } 
+    #right{
+     margin-left: 418px;
+       font-size: 30px;
+}
+#right2{
+     margin-left: 435px;
+       font-size: 29px;
+}
+#right3{
+     margin-left: 430px;
+       font-size: 30px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="./rapidopslogo-revamped.png">
+            </div>
+        </header>
+
+        <div id="accordion">
+            <h2 style="background-color:chocolate;">London<span id="right"><a><i class="fa fa-chevron-circle-right"></i></a></span></h2>
+            <div>
+                <p>it is most populous city in the United Kingdom,with a metropolian area of 9 million inhabitants.
+                    <img src="./london.jpeg">
+                </p>
+            </div>
+            <h2 style="background-color: greenyellow;">Paris<span id="right2"><a><i class="fa fa-chevron-circle-right"></i></a></span></h2>
+            <div>
+                <p>The Paris area is one of the largest population centres in Eupore with more than 12 million inhabitants.</p>
+                    <img src="./paris.jpg">
+            </div>
+            <h2 style="background-color:rgb(133, 235, 24)">Tokyo<span id="right3"><a><i class="fa fa-chevron-circle-right"></i></a></span></h2>
+            <div>
+            
+                <p>Tokyo is also the financial, cultural, and industrial center of Japan and With a mentropolitan         area of 40.8 million inhabitants.</p>
+                    <img src="./tokyo.jpeg">
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+
+    $(function () {
+        $("#accordion").accordion();
+    });
+
+
+</script>
+
+</html>

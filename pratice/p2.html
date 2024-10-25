@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//      function* startGame() {
+//   const answer = yield 'Do you love JavaScript?';
+//   if (answer !== 'Yes') {
+//     return "Oh wow... Guess we're gone here";
+//   }
+//   return 'JavaScript loves you back ❤️';
+// }
+
+// const game = startGame();
+// console.log(game.next().value); // Do you love JavaScript?
+// console.log(game.next("yes").value);
+// console.log('I want pizza'[0]);
+
+
+// function a(){
+
+// }
+// console.log(a.prototype);
+
+//  const b = () => {
+
+// }
+// console.log(b.prototype);    
+
+
+// const getList = ([x, ...y]) => [x, y]
+
+
+// const list = [1, 2, 3, 4]
+
+// console.log(getList(list))
+
+
+// const output = `I'm possible!
+// You should${'' && `n't`} see a therapist after so much JavaScript lol`;
+// console.log(output);
+   
+// function compareMembers(person1, person2 = person) {
+//   if (person1 !== person2) {
+//     console.log('Not the same!');
+//   } else {
+//     console.log('They are the same!');
+//   }
+// }
+
+// const person = { name: 'Lydia' };
+
+// compareMembers(person)
+
+ 
+// const emojis = [1,2,3,4,5,6];
+
+// console.log(emojis.splice(1, 2,"da"))
+
+// const jsonNumber = JSON.stringify(4); // '4'
+// JSON.parse(jsonNumber); // 4
+
+// console.log(typeof jsonNumber)
+
+
+// const jsonArray1 = JSON.stringify([1, 2, 3]); // '[1, 2, 3]'
+// JSON.parse(jsonArray1); // [1, 2, 3]
+// console.log(typeof jsonArray1);
+
+
+// const jsonArray = JSON.stringify({ name: 'Lydia' }); 
+//  console.log(typeof jsonArray);
+// function* generatorOne() {
+//   yield ['a', 'b', 'c'];
+// }
+
+// function* generatorTwo() {
+//   yield* ['a', 'b', 'c'];
+// }
+
+// const one = generatorOne();
+// const two = generatorTwo();
+
+// console.log(one.next().value);
+// console.log(two.next().value);
+
+
+// console.log(`${('I love')} to program`);
+// let config = {
+//   alert: setInterval(() => {
+//     console.log('Alert!');
+//   }, 1000),
+// };
+
+// config = null;
+
+// console.log(config);
+// const myMap = new Map();
+// const myFunc = () => 'greeting';
+
+// myMap.set(myFunc, 'Hello world!');
+
+
+// myMap.get('greeting');
+// console.log(myMap.get(myFunc));
+
+// function sumValues(x, y, z) {
+//    console.log(x,y,z);
+//   return x + y + z;
+// }
+// console.log(sumValues(...[1, 2, 3]))
+// const groceries = ['banana', 'apple', 'peanuts'];
+// if(groceries.indexOf("apple")){
+//     console.log("as")
+// }
+// else{
+//     console.log("abc");
+// }
+// async function* range(start, end) {
+//   for (let i = start; i <= end; i++) {
+//     yield Promise.resolve(i);
+//   }
+// }
+
+// (async () => {
+//   const gen = range(1, 3);
+//   for await (const item of gen) {
+//     console.log(item);
+//   }
+// })();
+// function myFunc({ x, y, z }) {
+//   console.log(x, y, z);
+// };
+
+// myFunc(1, 2, 3);
+
+    // const myPromise = Promise.resolve(Promise.resolve('Promise!'));
+
+    // function funcOne() {
+    //     myPromise.then(res => res).then(res => console.log(res));
+    //     setTimeout(() => console.log('Timeout!', 0));
+    //     console.log('Last line!');
+    // }
+
+    //     async function funcTwo() {
+    //     const res = await myPromise;
+    //     console.log(await res);
+    //     setTimeout(() => console.log('Timeout!', 0));
+    //     console.log('Last line!');
+    //     }
+
+    //     funcOne();
+    //     funcTwo();
+//     const person = {
+//   name: 'Lydia Hallie',
+//   address: {
+//     street: '100 Main St',
+//   },
+// };
+
+// Object.seal(person);
+// person.name = "bhavik"
+// console.log(person);
+
+    // const add = x => x + x;
+
+    // function myFunc(num = 2, value = add(num)) {
+    //   console.log(num, value);
+    // }
+
+    // myFunc();
+    // myFunc(3,8);
+
+//     const user = {
+// 	email: "e@mail.com",
+// 	password: "12345"
+// }
+
+// function updateUser({ email, password }) {
+// 	if (email) {
+// 		Object.assign(user, { email })
+// 	}
+// 	if (password) {
+// 		user.password = password
+// 	}
+
+// 	return user
+// }
+
+// const updatedUse = updateUser({ email: "new@email.com",password:"12345"})
+// console.log(updatedUse);
+    
+// const animals = {};
+// let dog = { emoji: '🐶' }
+// let cat = { emoji: '🐈' }
+// console.log(dog,"..................",cat);
+
+// animals[dog] = { ...dog, name: "Mara" }
+// animals[cat] = { ...cat, name: "Sara" }
+ 
+// console.log(animals);
+// console.log(animals[dog])
+
+// const promise1 = Promise.resolve('First')
+// const promise2 = Promise.resolve('Second')
+// const promise3 = Promise.reject('Third')
+// const promise4 = Promise.resolve('Fourth')
+
+// const runPromises = async () => {
+//       const res1 = await Promise.all([promise1, promise2]);
+//       const res2 = await Promise.all([promise3, promise4]);
+//       console.log(res1,res2) 
+// }
+
+// runPromises()
+	
+
+// const keys = ["name", "age"];
+// const values = ["Lydia", 22];
+
+// const method =
+//   Object.fromEntries(
+//     keys.map((_, i) => {
+//       return [keys[i], values[i]];
+//     })
+//   );
+//   console.log(method);
+
+
+// let aa = {
+//   a:"1",
+//   b:{
+//     c:"a",
+//   }
+// }
+
+// Object.freeze(aa)
+
+//  aa.b.c = [1,2,3,4]
+
+// console.log(aa);
+
+ 
+// const  A = () => new Promise((res,rej) => {
+//          console.log("abc");
+//         setTimeout(() => {
+//             res("ok")
+//         },1000)
+//     })
+
+//  console.log("aaaaaaaaaaa");
+// async function  abc() {
+//     let a =  await A();
+//     console.log(a);
+// }
+// console.log("saj");
+// abc()
+// console.log("dsjkjjjkas");
+
+let a = [1,2,3]
+let b = [4,5,6]
+
+let aa = a.forEach((e,i) => setTimeout(() => {
+   console.log(i,e);
+},5000));
+
+let bb = b.forEach((e,i) => setTimeout(() => {
+    console.log(i,e);
+ },10000));
+
+async function s(){
+  
+     await bb;
+     await aa;
+
+}
+
+s()
+
+   </script>
+
+</body>
+</html>

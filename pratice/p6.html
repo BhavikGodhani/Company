@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Emitter Example</title>
+</head>
+
+<body>
+    <!-- <button id="emitBtn">Click Me</button> -->
+
+    <!-- <p>Bhavik Godhani</p>
+    <ul>
+       <li id="first">1</li>
+       <li id="second">2</li>
+       <li id="first">3</li>
+    </ul> -->
+
+
+    <div id="uniqueIdElement">
+        This is the element with a unique ID.
+      </div>
+    
+      <div id="uniqueIdElement">
+        This is another element with the same ID, which is incorrect.
+      </div>
+    <!-- <script>
+
+        // Define a simple event emitter class
+        class EventEmitter {
+            constructor() {
+                this.events = {};
+            }
+
+            // Method to subscribe to events
+            on(eventName, callback) {
+                if (!this.events[eventName]) {
+                    this.events[eventName] = [];
+                }
+                this.events[eventName].push(callback);
+            }
+
+            // Method to emit (trigger) events
+            emit(eventName, ...args) {
+                if (this.events[eventName]) {
+                    this.events[eventName].forEach(callback => {
+                        callback(...args);
+                    });
+                }
+            }
+        }
+        // Create an instance of EventEmitter
+        const emitter = new EventEmitter();
+
+        // Subscribe to an event
+        emitter.on('buttonClick', function() {
+            console.log(`Button clicked! Messsage`);
+        });
+
+        // Function to emit the event when button is clicked
+        const emitButton = document.getElementById('emitBtn');
+        emitButton.addEventListener('click', function() {
+            emitter.emit('buttonClick', 'Hello from event emitter!');
+        });
+    </script> -->
+
+    <script>
+
+var element = document.getElementById('uniqueIdElement');
+    
+    console.log(element.textContent);
+        // console.log(document.body.parentNode.parentElement);
+        // console.log(document.body.firstElementChild);
+        // console.log(document.body.firstElementChild.firstChild);
+        // console.log(document.body.firstElementChild.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.firstChild);
+     
+        //  console.log(document.body.firstElementChild.nextElementSibling.lastElementChild.previousElementSibling.lastElementChild);
+
+
+
+
+
+
+        //////////////////////////////////////////////////////////////////////
+        // const EventEmitter = require('events');
+        // console.log(EventEmitter);
+        // const eventEmitter = new EventEmitter();
+
+        // eventEmitter.on('start', () => {
+        //   console.log('started');
+        // });
+        // eventEmitter.emit('start');
+        // eventEmitter.on('start', number => {
+        //   console.log(`started ${number}`);
+        // });
+        // eventEmitter.emit('start', 23);
+        // eventEmitter.on('start', (start, end) => {
+        //   console.log(`started from ${start} to ${end}`);
+        // });
+        // eventEmitter.emit('start', 1, 100);
+    </script>
+</body>
+
+</html>

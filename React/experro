@@ -1,0 +1,2 @@
+What is widget?
+When you open Experro Visual Builder, you'll notice a side panel on the right sidebar labeled "Basic Components", "Theme Components", etc. Within each section, you'll find various icons representing widgets. These widgets can be dragged and dropped onto the page. Once a widget is dropped, the associated component will be rendered on the page.

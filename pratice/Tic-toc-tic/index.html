@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-tac-toe</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                margin-top: 200px;
+                margin-left: 620px;
+                width: 200px;
+                height: 200px;
+            }
+            td {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid black;
+            }
+            input {
+                border: none;
+                width: 25px;
+                height: 25px;
+                font-size: 25px;
+                cursor: pointer;
+            }
+            #won{
+                margin-top: 50px;
+                margin-left: 700px;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <table>
+                <tr>
+                    <td><input type="text" onclick="mainfun()" id="one"></td>
+                    <td><input type="text" onclick="mainfun()" id="two"></td>
+                    <td><input type="text" onclick="mainfun()" id="three"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" onclick="mainfun()" id="four"></td>
+                    <td><input type="text" onclick="mainfun()" id="five"></td>
+                    <td><input type="text" onclick="mainfun()" id="six"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" onclick="mainfun()" id="seven"></td>
+                    <td><input type="text" onclick="mainfun()" id="eight"></td>
+                    <td><input type="text" onclick="mainfun()" id="nine"></td>
+                </tr>
+            </table>
+            <p id="won"></p>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+    </html>

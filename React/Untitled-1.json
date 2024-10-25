@@ -1,0 +1,52 @@
+[
+    {
+        "qr": [
+            {
+                "id": "1",
+                "name": "vc",
+                "description": "x",
+                "parent_id": 0
+            },
+            {
+                "id": "2",
+                "name": "h",
+                "description": "ds",
+                "parent_id": 1
+            },
+            {
+                "id": "3",
+                "name": "k",
+                "description": "fd",
+                "parent_id": 2
+            },
+            {
+                "id": "4",
+                "name": "o",
+                "description": "mn",
+                "parent_id": 0
+            }
+        ]
+    },
+    {
+        "ws": [
+            {
+                "id": "1",
+                "name": "1",
+                "description": "1",
+                "parent_id": 0
+            },
+            {
+                "id": "2",
+                "name": "3",
+                "description": "3",
+                "parent_id": 1
+            },
+            {
+                "id": "3",
+                "name": "2",
+                "description": "2",
+                "parent_id": 0
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Session Storage Example</h2>
+    <p>Enter some data and refresh the page to see it deleted from session storage.</p>
+  
+    <label for="dataInput">Enter Data:</label>
+    <input type="text" id="dataInput">
+    <button onclick="saveData()">Save Data</button>
+    <button onclick="clearSessionStorage()">Clear Session Storage</button>
+  
+    <script>
+      // Function to save data to session storage
+      function saveData() {
+        var data = document.getElementById('dataInput').value;
+        sessionStorage.setItem('userData', data);
+        console.log('Data saved to session storage:', data);
+      }
+  
+      // Function to clear session storage
+      function clearSessionStorage() {
+        sessionStorage.removeItem('userData');
+        console.log('Session storage cleared.');
+      }
+  
+      // Check if there is data in session storage on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        var storedData = sessionStorage.getItem('userData');
+        if (storedData) {
+          console.log('Data found in session storage:', storedData);
+          // Display the stored data (optional)
+          document.getElementById('dataInput').value = storedData;
+        }
+      });
+    </script>
+</body>
+</html>

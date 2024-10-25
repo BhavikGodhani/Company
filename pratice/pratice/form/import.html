@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>import</title>
+</head>
+<body>
+    <script type="module">
+
+import {sayHi} from './export.js';
+
+
+document.body.innerHTML= sayHi('John');
+//  ( async function (){
+//     let say = await import('./export.js');
+//     say.sayhi();
+//     say.sayHello();
+//   })();
+    </script>
+</body>
+</html>

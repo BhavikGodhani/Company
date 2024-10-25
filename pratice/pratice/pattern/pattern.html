@@ -1,0 +1,281 @@
+  <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>DOM Visualizer</title>
+            <!-- <style>
+                table {
+            border-collapse: collapse;
+            font-size: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        td {
+            border:1px solid black;
+        }
+            </style> -->
+        </head>
+        <body>
+            <!-- <h1 id="title">DOM Visualizer</h1>
+            <div class="contact">
+            
+                <h2>Romain Bohdanowicz</h2>
+                <p id="twitter">Twitter : @bioub</p>
+            </div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul> -->
+            <!-- <div>Users:</div>
+            <ul>
+              <li>John</li>
+              <li>Pete</li>
+            </ul>
+        </body> -->
+        <!-- <table>
+
+            <tr>
+                <td>1:1</td>
+                <td>1:2</td>
+                <td>1:3</td>
+                <td>1:4</td>
+                <td>1:5</td>
+               
+            </tr>
+            <tr>
+                <td>2:1</td>
+                <td>2:2</td>
+                <td>2:3</td>
+                <td>2:4</td>
+                <td>2:5</td>
+              
+            </tr>
+            <tr>
+                <td>3:1</td>
+                <td>3:2</td>
+                <td>3:3</td>
+                <td>3:4</td>
+                <td>3:5</td>
+
+            </tr>
+            <tr>
+                <td>4:1</td>
+                <td>4:2</td>
+                <td>4:3</td>
+                <td>4:4</td>
+                <td>4:5</td>
+               
+            </tr>
+            <tr>
+                <td>5:1</td>
+                <td>5:2</td>
+                <td>5:3</td>
+                <td>5:4</td>
+                <td>5:5</td>
+            
+            </tr>
+           </table> -->
+           <!-- <div id="elem">Hello<b id="nam">Godhani</b></div> -->
+          
+           <!-- <ul id="unique">
+            <li></li>
+           </ul> -->
+
+           <!-- <div class="id">Bhavik Godhani</div> -->
+           <!-- <div id="elem">Javascript assigned the property
+            <p>Bhavik</p>
+           </div> -->
+           <!-- <p class="myParagraph" id="name">This is a paragraph</p>
+
+           
+           <div data-widget-name="menu">Choose the genre</div> -->'
+          
+           <!-- <p class="special">bhavik Godhani</p>
+           <div id="divTest" class="special">Foram Kaneriya -->
+            <!-- <p> -->
+               <!-- <b class="special">jeet</b></p>  -->
+           <!-- </div> -->
+
+   <!-- <input type="text" onchange="writetext(this)" placeholder="onchange">
+   <input type="text" oninput="writetext(this)" placeholder="oninput">
+<p id="test"></p> -->
+     <div id="inner">
+        <div id="outer">
+           Click me
+        </div>
+     </div>
+      
+    
+    
+    <script>
+    let inner = document.getElementById('inner');
+
+    inner.addEventListener("click", function(event) {
+        console.log("outer Clicked")
+    });
+
+    let outer = document.getElementById('outer');
+
+outer.addEventListener("click", function(e){
+    console.log("inner Clicked");
+    e.stopPropagation();
+});
+
+
+    //  function writetext(ele){
+    //   document.getElementById('test').innerHTML = ele.value;
+
+    //   document.getElementById('test').addEventListener("dbclick",() => {
+    //  console.log("Element Clicked");
+    //   });
+     
+    //  } 
+// import moment from "moment";
+
+// console.log(moment());
+
+   //pratice
+  
+//  let id = document.querySelector('p .special');
+//   console.log(id); 
+
+//  id.style.backgroundColor = 'red';
+
+
+
+//    let textNode = document.createTextNode('Here I am');
+    
+//     document.body.prepend(textNode);
+
+//    const name = document.querySelector('[data-widget-name]');
+   
+
+//    let id = name.getAttribute("data-widget-name");
+//      console.log(id);
+
+
+    //  let id =   name.getAttribute("id")
+    //      console.log(id);
+    
+      
+     // const h5 = document.createElement('h5');
+
+    // h5.innerText = "Bhavik Godhani";
+    
+    // const body = document.querySelector('body');
+    //  body.append(h5);
+ 
+
+
+
+    // const p = document.createElement('p');
+
+    // p.innerText = "Bhavik Godhani";
+    
+    // const body = document.querySelector('body');
+    // body.append(p);
+
+    
+
+//  document.querySelector('.myParagraph').innerText = "Bhavik";
+
+  
+
+
+     //innerHTML , innerText , textContent
+    //  innerHTML :-Tag sahit badhu avi jai
+    // innerText:-Only Text,css added,change HTML 
+    // textContent:-only text and one line..
+
+    //  name.innerHTML;
+
+       
+    //    name.tagName;
+    //    console.log(name);
+       
+
+
+
+    //   let unique = document.getElementById('unique');
+
+    //    let name = unique.firstElementChild.innerHTML = "1";
+    //    console.log(name);
+
+    //   let singleLine = document.getElementById('elem').textContent;
+    //   console.log(singleLine);
+    //   let nameChg = document.getElementById('nam');
+
+    //   nameChg.innerHTML = 'Bhavik';
+      
+
+//    let table = document.body.children[1].firstElementChild;
+    
+//    for(let i = 0; i<table.rows.length ;i++){
+    
+//     let rows = table.rows[i];
+    
+
+//     let column = rows.cells[table.rows.length-i-1];
+//     console.log(column);
+    
+    // column.style.backgroundColor = 'red';
+
+
+
+    
+//    }
+
+
+
+
+//   let div = document.body.firstElementChild;
+
+//   let ul = document.body.firstElementChild.nextElementSibling
+//   let li =document.body;
+  
+//   console.log(ul);
+//    let node = document.body.previousSibling;  //#text
+//    let node1 = document.body.previousElementSibling; //head
+
+//    let node = document.body.firstElementChild; 
+//    let node1 = document.body.firstChild  //#text
+
+//   let node = document.body.firstElementChild.nextElementSibling.nextElementSibling.lastElementChild.previousElementSibling;
+
+
+// let node = document.body.firstElementChild.nextElementSibling;
+
+//  let node = document.body.firstElementChild.nextElementSibling.firstElementChild.nextElementSibling.firstChild;
+
+//  let node = document.body.children[2].lastChild.previousElementSibling;
+   
+// let node = document.head.parentNode;
+
+
+// console.log(node);
+
+
+
+
+
+
+
+    //     //   *
+    //     //  ***
+    //     // *****
+    // //     let n = 5 ;
+    // //     for(let i = 1; i<= n ;i++){
+    // //     let str = "* ";
+    // //     let space=" ";
+    // //     console.log(space.repeat((n-i)) + str.repeat(i*2-1));  
+    // // }
+  
+    // let date = new Date();
+    // console.log(date);
+
+    </script>
+</body>
+</html> 

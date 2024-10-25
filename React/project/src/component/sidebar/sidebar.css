@@ -1,0 +1,58 @@
+.container{
+    height: 100vh;
+    width: 220px;
+    background-color: black;
+    border: 1px solid white;
+}
+.side {
+    margin-left: 210px;
+    margin-top: 0px;
+    width: 14px;
+    height: 17px;
+    border-radius: 30px;
+    background-color: blue;
+}
+.logo img{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 130px;
+    height: 40px;
+}
+.tag {
+    display: flex;
+}
+
+.tag svg{
+    margin-top: 50px;
+    margin-left: 30px;
+    height: 20px;
+    width: 20px;
+    background-color: chartreuse;
+}
+
+.tag h3{
+    height: 0px;
+    width: 20px;
+    margin-top: 45px;
+    margin-left: 20px;
+    color: yellowgreen;
+  
+}
+
+.logout{
+    margin-top: 350px;
+    margin-left: 30px;
+    height: 20px;
+    width: 20px;
+    background-color: yellowgreen;
+    display: flex;
+}
+
+.logout h3{
+    height: 0px;
+    width: 20px;
+    margin-top: 0px;
+    margin-left: 50px;
+    color:aqua
+  
+}

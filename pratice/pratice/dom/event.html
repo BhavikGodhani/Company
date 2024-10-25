@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <input type="button" id="hider" value="Click to hide the text" />
+
+    <div id="text">Text</div>
+
+<script>
+//      let id = document.getElementById('hider');
+//    onclick = function(){
+//     document.getElementById('text').hidden = true;
+//    }
+       
+//   class Menu {
+//     handleEvent(event) {
+//       switch(event.type) {
+//         case 'mousedown':
+//           elem.innerHTML = "Mouse button pressed";
+//           break;
+//         case 'mouseup':
+//           elem.innerHTML = "...and released.";
+//           break;
+//       }
+//     }
+//   }
+
+//   let menu = new Menu();
+ 
+// let menu = (event) => {
+//     if(event.type == 'mousedown'){
+//         console.log("Press key")
+//     }
+//     if(event.type == 'mouseup'){
+//     console.log("Key release");
+// }
+// }
+
+
+//   elem.addEventListener('mousedown', menu);
+//   elem.addEventListener('mouseup', menu);
+
+let button = document.getElementById('hider');
+
+button.addEventListener("click", () => alert("1"));
+
+button.removeEventListener("click", () => alert("1"));
+
+button.onclick = () => alert(2);
+</script>
+</body>
+</html>

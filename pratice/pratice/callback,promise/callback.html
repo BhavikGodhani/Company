@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <script>
+    
+ // callback 
+
+        
+        
+//callback hell 
+
+function delayhello(callback,om){
+        setTimeout(() => {
+            console.log(callback);
+                om();
+        },1000);  
+}
+// delayhello(function () {console.log('callback called');});
+// console.log("hello");
+// Ans:hello,Name , callback called
+
+delayhello("Bhavik",() => {
+    delayhello("Aman",() => {
+        delayhello("Jay");
+    });
+});
+
+
+
+
+//  function getitem(name,nextname){
+//     setTimeout(() => {
+//      console.log("Name ",name);
+//      if(nextname){
+//         nextname();
+//      }
+//     },1000);
+//   }
+//   getitem("Nishil",() => {
+//       getitem("Nensi" ,() => {  
+//            getitem("Bhavik");
+// });
+// }); 
+
+
+
+
+//  function getData(dataId,getNextData){
+//     setTimeout(() => {
+//    console.log("dataId" , dataId);
+//    if(getNextData){
+//    getNextData();
+//    }
+//     },1000);
+//  }
+//  console.log("fetching data1 ....");
+//  getData(1,() => {
+//     console.log("fetching data2 ...");
+//     getData(2,() => {
+//         console.log("fetching data3 ...");
+//         getData(3);
+//     })
+//  });
+    
+
+
+
+    // callback and callbackhell
+
+    // function callback(name){
+    //     console.log("Starting Data.....");
+    //     setTimeout(() => {
+    //          name()
+    //     }, 1000);
+    // }
+    // callback(function () {
+    //     console.log("Bhavik Godhani")
+    // })
+
+    /////////////////////////////////////////////////
+
+    // callbackhell
+
+    // function callback(name,getNextname){
+    //     setTimeout(() => {
+    //         console.log("My Name is",name);
+    //         if(getNextname){
+    //             getNextname()
+    //         }
+    //     },1000)
+    // }
+    // callback("Bhavik",function(){
+    //     callback("Nishil",function (){
+    //         callback("Jeet");
+    //     })
+    // })
+</script>
+</body>
+</html>

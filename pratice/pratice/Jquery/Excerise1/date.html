@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// function getLocalDay(date) {
+
+// let day = date.getDay();
+
+// if (day == 0) { // weekday 0 (sunday) is 7 in european
+//   day = 7;
+// }
+
+// return day;
+// }
+//  let date = new Date(2012,1,22,3,12);
+//   console.log(getLocalDay(date));
+ // console.log(date);
+
+//  function fib(n){
+// let a = 0;
+// let b = 1;
+// let c ;
+
+// for(let i = 1; i<=n ;i++){  
+//     console.log(a);   
+//      c = a + b;  
+//      a = b ;      
+//      b = c ;      
+// }
+// }
+// console.log(fib(7));
+// let user = "John";
+// if (true) {
+//     gu
+//   sayHi :() => {
+//     alert(` ${this.user}`);
+//   }
+// }
+
+// sayHi();
+
+// function call1(fname,lname){
+//   console.log(fname,lname);
+// }
+
+
+// let result = call1.apply(null,["Chadsaniya","Jeet"]);
+// call1.call(abc); // fun call
+
+
+// function calling(product,name){
+//     this.product = product ;
+//     this.name = name;
+//     return {
+//         product,
+//         name
+//     }
+
+// }
+// let result = calling.call("Jeet" ,"Kano");
+// console.log(result);
+  
+
+// const abc = {
+//             getx:() =>  {
+//                 this.x = 90;
+//             return this.x;
+//         }
+// }
+// const as = abc.getx; 
+// const ghk = as.bind(abc);
+// console.log(ghk());
+
+// let abc = {
+//     name:"Bhavik",
+//     dfgh:() => {
+//      return this.name;
+//     }
+// }
+
+// const name = abc.dfgh;
+// const qwer = name.bind(abc);
+// console.log(qwer());
+
+
+// class Test {
+//     constructor(name) {
+//         this.name = name
+//     }
+//     sayHiArrow  = () => console.log(this , this.name , '....A')
+    
+//     sayHi (newArg1='hello' , newArg2='hi') {
+//         console.log(this?.name , newArg1 , newArg2, this , '....');
+//     }
+
+
+// }
+
+// function hi () {
+//     console.log(this);
+// }
+
+// const test1 = new Test('savan')
+
+// const sayHiArrow = test1.sayHiArrow;
+// const sayHi = test1.sayHi;
+// sayHiArrow();
+// sayHi()
+// sayHi.call(test1 , 'h1', 'h2');
+// sayHi.apply(test1 , ['h1', 'h2']);
+// hi()    
+
+// const callTest = sayHi.bind(test1);
+// callTest('h1', 'h2')
+let a = {
+    name: 'savan',
+    b: {
+        a:1
+    }
+}
+let b = {
+    name: 'jay'
+}
+
+function test() {
+    console.log(this);
+}
+
+test.call(a)
+</script>
+</body>
+</html>

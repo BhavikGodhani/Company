@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        #myCanvas {
+            background-color: antiquewhite;
+            margin-top: 50px;
+            margin-left: 500px;
+            position: absolute; 
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="500px" height="500px"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        let circles = [
+            { x: 120, y: 250, radius: 70, color: 'blue' },
+        ];
+
+        function drawCircles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            circles.forEach(circle => {
+                ctx.beginPath();
+                ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+                ctx.fillStyle = circle.color;
+                ctx.fill();
+                ctx.stroke();
+            })
+        }
+        drawCircles()
+    </script>
+</body>
+</html>

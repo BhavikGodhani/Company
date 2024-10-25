@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.stop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap:10px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+#clock,#tdyDate{
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+      
+    <div class="container">
+         <div class="content">
+        <div id="clock">
+            Time :  
+        <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+          </div>
+       <div id="tdyDate">
+         Date : <span class="date1"></span>
+       </div>
+       </div>
+
+      <div class="watch">
+    <div class="stop">Stopwatch</div>
+    <div id="stopwatch">00:00:00:00</div>
+    </div>
+     
+    <div class="btn">
+    <button id="start1" onclick="start()" style="background-color: green;">Start</button>
+    <button id="stop1" onclick="stop()" style="background-color:red;">Stop</button>
+    <button id="resume1" onclick="resume()" style="background-color:yellow">Resume</button>
+    <button id="reset1" onclick="reset()" style="background-color:yellowgreen;">Reset</button>
+   </div>
+
+    </div>
+      
+     
+      
+    <script src="script.js"> </script>
+</body>
+</html>
